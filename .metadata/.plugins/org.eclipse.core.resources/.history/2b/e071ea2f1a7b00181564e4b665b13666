@@ -1,0 +1,79 @@
+package _start.config.calendar;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+
+import _start.config.CreatePlayTimeDates;
+import _start.kalender.PlayTime;
+import common.LocalMethods;
+import common.log.CommonLog;
+
+public class HandleCalendar {
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	public HandleCalendar(String line) {
+		CommonLog.logger.info("heading//");
+
+		if (line.startsWith("periode")) {
+			// kalenderPeriod(line);
+			new HandleCalendarPeriod(line);
+		} else {
+			/*
+			 * Split lines according to commas.
+			 */
+			String[] lineSplit = LocalMethods.trimStringArray(line.split(","));
+			int aliasEndIndex = createPlayTime(lineSplit);
+			String period = lineSplit[0].substring(aliasEndIndex);
+
+			new CreatePlayTimeDates(period, line, skipEverySecond, playTime);
+			// Reset skip every second.
+			skipEverySecond = false;
+
+			exceptionDateStartTimeShowColor();
+			ArrayList<LocalDate> localDates = playTime.getDatoer();
+			playTime.setDateFirst(localDates.get(0));
+			playTime.setDateLast(localDates.get(localDates.size() - 1));
+			playTimeCollection.add(playTime);
+		}
+	}
+
+	/**
+	 * Returns index where alias end and create object 'PlayTime' with alias text as
+	 * name.
+	 * 
+	 * @param lineSplit
+	 *            Current configuration line split up by commas.
+	 */
+	private int createPlayTime(String[] lineSplit) {
+
+		/*
+		 * Set index to where alias text end and first digit begin.
+		 */
+		int aliasEndIndex = LocalMethods.getFirstDigit(lineSplit[0]);
+		if (lineSplit[0].contains("+")) {
+			/*
+			 * if '+' adjust index to let first digit contain the plus sign.
+			 */
+			aliasEndIndex = lineSplit[0].indexOf("+");
+		} else if (lineSplit[0].contains("(")) {
+			/*
+			 * if '(' adjust index to the digit inside parentheses and set skip every second
+			 * to true.
+			 */
+			aliasEndIndex = lineSplit[0].indexOf("(");
+			skipEverySecond = true;
+		}
+		playTime = new PlayTime(lineSplit[0].substring(0, aliasEndIndex));
+
+		if (skipEverySecond) {
+			/*
+			 * Adjust index to first digit ahead of parentheses.
+			 */
+			aliasEndIndex += 3;
+		}
+
+		return aliasEndIndex;
+	}
+}

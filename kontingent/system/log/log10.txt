@@ -1,0 +1,283 @@
+              ==========================================================================================
+                                             - Sunday 2018.06.29 11:56 LogStart
+              ==========================================================================================
+
+
+             Class constructor: _start.MemberList - Member list (loglevel = FINE)
+---------------------------------------------------------------------------------
+
+
+                                Class constructor: common.system.CheckSystemFiles
+---------------------------------------------------------------------------------
+
+
+                                    Class constructor: common.system.ChkSysFolder
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /system
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/system
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /system/log
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/system/log
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /system/jquery
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/system/jquery
+              FileTestInfo.createFile status = FILEEXISTS
+    25           common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = \config.txt
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/config.txt
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+
+
+                                          Class constructor: common.system.ChkLog
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /system/log
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/system/log
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /log.txt
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/log.txt
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+                 common.out.file.GetListOfSpecificFiletype - <init>
+
+
+                                       Class constructor: common.system.ChkJquery
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = \system\jquery\jquery-3.2.1.js
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/system/jquery/jquery-3.2.1.js
+              FileTestInfo.createFile status = FILEEXISTS
+    50           common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = \system\jquery\tablesorter.js
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/system/jquery/tablesorter.js
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+
+
+                                 Class constructor: common.system.ChkResultFolder
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /resultater
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/resultater
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /resultater/kontingentliste
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/resultater/kontingentliste
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+    75           common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /resultater/telefonliste
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/resultater/telefonliste
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /resultater/kalender
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/resultater/kalender
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /resultater/kalender/kalender.js
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/resultater/kalender/kalender.js
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+
+
+                          Class constructor: common.system.ChkBridgecentralFolder
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /bridgecentral
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+
+
+                             Class constructor: common.system.ChkVejledningFolder
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /vejledning
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/vejledning
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /vejledning/1_udskrifter.png
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/vejledning/1_udskrifter.png
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /vejledning/2_medlemskaber.png
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/vejledning/2_medlemskaber.png
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+   125           common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /vejledning/3_placering.png
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/vejledning/3_placering.png
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /vejledning/4_bridgecentralmappe.png
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/vejledning/4_bridgecentralmappe.png
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /vejledning/5_config.png
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/vejledning/5_config.png
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /vejledning/6_medlemsbehandling.png
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/vejledning/6_medlemsbehandling.png
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /vejledning/vejledning.css
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/vejledning/vejledning.css
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /vejledning/vejledning.htm
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/vejledning/vejledning.htm
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.mac.MessagesAndChecks - <init>
+              MessagesAndChecks modeChecks = FILETEST_SYSTEMFILES
+                 common.out.file.filetest.mac.CaseFiletest_systemFiles - <init>
+
+
+                                  Class constructor: _start.vejledning.Vejledning
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = /config.txt
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/config.txt
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   175           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                   Class constructor: _start.config.calendar.HandleCalendarPeriod
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                   Class constructor: _start.config.calendar.HandleCalendarPeriod
+---------------------------------------------------------------------------------
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+
+
+                                     Class constructor: _start.kalender.MinusWeek
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                   Class constructor: _start.config.calendar.HandleCalendarPeriod
+---------------------------------------------------------------------------------
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+
+
+                                     Class constructor: _start.kalender.MinusWeek
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------

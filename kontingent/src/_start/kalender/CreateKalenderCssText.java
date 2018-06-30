@@ -1,0 +1,38 @@
+package _start.kalender;
+
+import common.log.CommonLog;
+
+public class CreateKalenderCssText {
+
+	private String[] cssLines = new String[] { "/*                                           */",
+			"/* **************** General **************** */", "/*                                           */", "tr{",
+			"	height: 15px;", "}", "tr.breakhere{", "   page-break-before: always", "}", "table{",
+			"   border: none; border-collapse: collapse;", "}", ".noteForPlayers.td{",
+			"   border-bottom: 1px solid black; margin:0; padding: 0px; ", "}", ".noteForPlayers.tr{",
+			"   margin:0; padding:0;", "}", ".contentWidth{", "   width: 1150px;", "}", ".hide{", "   display: none;",
+			"}", "h1{", "   text-align: center;", "}",
+
+			".bigFont{", "    font-size:45pt;", "}",
+
+			".basicColor{", "    background-color: #98C0EF;", "}",
+
+			".dashedUnderLine{", "    border-style: none dashed dashed dashed;", "    border-width: thin;", "}",
+
+			".dashedLine{", "    border-style: none dashed none dashed;", "    border-width: thin;", "}",
+
+			".lastMonth{", "    background-color: #BAD5F4;", "}", ".minusWeek{", "    background-color: #FF9191;", "}",
+
+			".textCenter{", "    text-align: center;", "}", };
+
+	public String[] getCssLines() {
+		return cssLines;
+	}
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	public CreateKalenderCssText() {
+		CommonLog.logger.info("heading//");
+
+	}
+}

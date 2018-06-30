@@ -1,0 +1,14 @@
+package _start.config;
+
+import common.log.CommonLog;
+
+public class HandleAddOn {
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	public HandleAddOn() {
+		CommonLog.logger.info("heading//");
+
+	}
+}

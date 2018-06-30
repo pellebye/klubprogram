@@ -1,0 +1,282 @@
+//********************************************************************************
+// Tomme linjer og linjer der begynder med "//" ignoreres af programmet. Linjer
+// der begynder med "*" angiver en ny informationsgruppe (en komando). Efter 
+// hver komando kommer de linjer der hører til denne komando.
+//
+// Eksempler på kommandoer:
+// *Klub
+// *Kontingent
+// *Telefonliste
+//
+//
+//********************************************************************************
+
+*Klub
+//********************************************************************************
+// Venstre side af lighedstegnet angiver det originale filnavn fra Bridgecentral
+// Efter lighedstegnet angives hvilke betegnelser der skal være over de 
+// resulterende kolonner i kontingentberegningen og telefonlisten. Rækkefølgen
+// her, vil også være den resulterende rækkefølge (fx mandag eftermiddag, mandag
+// aften, tirsdag eftermiddag, osv). Parantesen sidst på hver linie angiver hvor
+// mange dage den angivne klub spiller pr måned.
+//
+// Eksempler på klub-linjer:
+// Klub2484_Onsdag_eftermiddag = OnsE (4)
+// Klub2484_Onsdag_aften = OnsA (3)
+// Klub2484_Onsdag_hold = OnsH (1)
+//********************************************************************************
+
+Klub2484_Mandag_eftermiddag = ManE (4)
+Klub2484_Tirsdag_eftermiddag = TirE (4)
+Klub2484_Onsdag_formiddag = OnsF (4)
+Klub2484_Onsdag_eftermiddag = OnsE (4)
+Klub2484_Onsdag_aften = OnsA (3)
+Klub2484_Onsdag_hold = OnsH (1)
+Klub2484_Torsdag_aften = TorA (2)
+
+
+*Kontingent
+//********************************************************************************
+// Her angives algoritmerne for kontingentudregning. Der benyttes følgende tegn:
+// < > - = og der testes på antallet af spilledage pr måned.Der skal være 
+// mellemrum mellem de enkelte tegn og værdier. Linjen skal begynde med 
+// Klubstatus. Værdier der falder uden for algoritmerne er ugyldige og vil blive 
+// vist med -1 (som kontingent) på kontingentlisten.
+//
+// Eksempler på kontingentlinjer:
+// primær < 3    = 500
+// primær 3 - 5 = 650
+// primær > 5 = 950
+//********************************************************************************
+
+primær < 3 = 500
+primær 3 - 5 = 650
+primær > 5 = 950
+
+klub < 3 = 300
+klub 3 - 5 = 450
+klub > 5 = 650
+
+kursus 3 - 5 = 650
+
+*Telefonliste
+//********************************************************************************
+// Her angives hvilke kolonner fra kontingentlisten der skal med i telefonlisten.
+// Kolonnerne angives enten i en række med mellemrum imellem fx 
+//                3 4 7 8 10 11 12 13 14 15 16 17
+// eller som numre på selvstændige linjer. En kolonne på en selvstændig linje
+// kan have tilknyttet en farve. 
+//
+// Kolonnefarver angives som html farver med mellemrum efter kolonnenummeret.
+// Vedrørende html-farver se fx her: 
+// http://madsenworld.dk/forms/fcode-dk.htm
+//
+// Uden kolonneangivelser vil nedenstående eksempels kolonnenumre og
+// kolonnefarver blive brugt.
+//
+// Eksempler på kontingent-kolonner:
+// 3 4 7 8 10 11 12 13 14 15 16 17
+//3
+// 4 7 8 
+//
+// mandag
+//10 #E7FF95
+//11 #E7FF95
+//
+// tirsdag
+//12 #D8D7D4
+//
+// onsdag
+//13 #FFE79D
+//14 #FFE79D
+//15 #FFE79D
+//16 #FFE79D
+//
+// torsdag
+//17 #D8D7D4
+//********************************************************************************
+
+ 3 4 7 8 10 11 12 13 14 15 16 17
+3
+ 4 7 8 
+
+// mandag
+10 #E7FF95
+11 #E7FF95
+
+// tirsdag
+12 #D8D7D4
+
+// onsdag
+13 #FFE79D
+14 #FFE79D
+15 #FFE79D
+16 #FFE79D
+
+// torsdag
+17 #D8D7D4
+
+
+*kalender
+// Kalenderperioden angives i formatet "periode YYYYMMDD-YYYYMMDD"
+periode 20180601-20190901
+periode -uge 2018 7
+periode -uge 2018 42
+
+//********************************************************************************
+// En kalenderlinje består af nogle felter adskilt af kommaer. Det første felt
+// er obligatorisk og skal begynde med en betegnelse, som kan være de 
+// kolonneangivelser som blev brugt under komandoen *klub. Men betegnelsen kan
+// være hvad som helst der ønskes vist på kalenderen fx SOS, Pinsedag osv.
+// Betegnelsen efterfølges af perioden for den angivne klub (eller en enkelt dato
+// som begynder med et +). Ugedagen i den første dato i perioden (eller en enkelt
+// dato) bestemmer ugedagen i den spilledags spilleperiode. Hvis den første dato 
+// i spilleperioden fx er en onsdag, vil alle spilledage for denne klub være 
+// onsdage.
+//********************************************************************************
+
+//********************************************************************************
+// Den obligatoriske betegnelse (som er afsluttet med komma) kan i varierende 
+// antal efterfølges af 5 typer felter (også afsluttet med kommaer):
+//    1. en dato som ikke skal med i det obligatoriske felts periode.
+//       Feltet begynder med et minus fx '-20180328'.
+//    2. en dato som skal med udover det obligatoriske felts periode.
+//       Feltet begynder med et plus fx '+20180328'.
+//    3. et klokkeslet som ønskes vist på kalenderen. Feltet begynder
+//       med 'kl' fx 'kl 18:30'.
+//    4. en baggrundsfarve. Feltet begynder med 'farve'. Fx 'farve #F5F7CB'.
+//    5. en række betegnelser som der skal skiftes imellem. Betegnelserne begynder 
+//       og slutter med dobbeltkolon fx ':: gg1, gg2, gg3 ::'. Der skal være 
+//       mellemrum mellem betegnelserne.
+//********************************************************************************
+
+//********************************************************************************
+// Der er i eksemplet brugt disse farver:
+//		Formiddag gullig (#F5F7CB)
+//		Eftermiddag grønlig (#C0EF98)
+//		Aften rødlig (#F7CDCB)
+//		Hold brunlig (#CC9933)
+//
+//********************************************************************************
+
+//**************************************
+//    222       0000      1      888
+//   2   2     0    0     1     8   8
+//      2     0      0    1     8 8 8 
+//     2      0      0    1     8 8 8
+//    2  2     0    0     1     8   8
+//   22222      0000      1      888
+//**************************************
+
+//******************************
+//    SOMMER 2018
+//******************************
+
+Sommerbridge +20180814, kl 18:30, farve #F7CDCB
+Sommerbridge +20180828, kl 18:30, farve #F7CDCB
+
+//******************************
+//    EFTERÅR 2018
+//******************************
+
+// MANDAG 
+ManE 20180910-20181203, -20181015, kl 13, farve #C0EF98, :: gg1 gg2 gg3 ::
+// ManA 20180917-20181210, -20181015, kl 18:30, farve #F7CDCB 
+
+// TIRSDAG
+TirE 20180911-20181204, -20181016, kl 12:30, farve #C0EF98 
+
+// ONSDAG
+OnsF 20180912-20181205, -20181017, kl 08:45, farve #F5F7CB
+OnsE 20180912-20181205, -20181017, kl 13, farve #C0EF98
+OnsE afsl +20181212, kl 12, farve #C0EF98
+OnsA 20180912-20181205, -20181017, -20180905, -20181003, -20181107, -20181205, kl 18:30, farve #F7CDCB, :: gg1 gg2 gg3 ::
+OnsA afsl +20181205, kl 18:30, farve #F7CDCB
+
+// ONSDAG HOLD
+OnsH +20180905, +20181003, +20181107, +20181205, +20190102, +20190206, +20190306, kl 18:30, farve #CC9933
+
+// TORSDAG
+TorA (2)20180906-20181213, -20181018, kl 18:30, farve #F7CDCB
+
+// SOS
+SOS +20181118, kl 10 (9:30), farve #F5F7CB
+
+// HELLIGDAGE 2018
+Palmesøndag +20180325, farve #FF0000
+Skærtorsdag +20180329, farve #FF0000
+Langfredag +20180330,  farve #FF0000
+1. Påskedag +20180401, farve #FF0000
+2. Påskedag +20180402, farve #FF0000
+Store bededag +20180427, farve #FF0000
+Kristi himmelfartsdag +20180510, farve #FF0000
+Pinsedag +20180520, farve #FF0000
+2. pinsedag +20180521, farve #FF0000
+Juleaften +20181224, farve #FF0000
+Juledag +20181225, farve #FF0000
+2. juledag +20181226, farve #FF0000
+Nytårsaften +20181231, farve #FF0000
+
+
+//**************************************
+//    222       0000      1      999
+//   2   2     0    0     1     9   9
+//      2     0      0    1     9 9 9 
+//     2      0      0    1         9
+//    2  2     0    0     1         9
+//   22222      0000      1         9
+//**************************************
+
+// HELLIGDAGE 2019
+Nytårsdag +20190101, farve #FF0000
+Palmesøndag +20190414, farve #FF0000
+Skærtorsdag +20190418, farve #FF0000
+Langfredag +20190419,  farve #FF0000
+1. Påskedag +20190421, farve #FF0000
+2. Påskedag +20190422, farve #FF0000
+Store bededag +20190517, farve #FF0000
+Kristi himmelfartsdag +20190530, farve #FF0000
+Pinsedag +20190609, farve #FF0000
+2. pinsedag +20190610, farve #FF0000
+Juleaften +20191224, farve #FF0000
+Juledag +20191225, farve #FF0000
+2. juledag +20191226, farve #FF0000
+Nytårsaften +20191231, farve #FF0000
+
+periode -uge 2019 7
+periode -uge 2019 42
+
+//******************************
+//    FORÅR 2019
+//******************************
+
+ManE 20190107-20190401, kl 13, farve #C0EF98, :: gg1 gg2 gg3 ::
+// ManA 20190107-20190408, kl 18:30, farve #F7CDCB
+
+// TIRSDAG
+TirE 20190108-20190402, kl 12:30, farve #C0EF98 
+
+// ONSDAG
+OnsF 20190102-20190327, kl 08:45, farve #F5F7CB
+OnsE 20190102-20190327, kl 13, farve #C0EF98
+OnsA 20190102-20190327, -20190102, -20190206, -20190306, -20190403, kl 18:30, farve #F7CDCB, :: gg1 gg2 gg3 ::
+OnsA afsl +20190403, kl 18:30, farve #F7CDCB
+OnsE afsl +20190403, kl 12, farve #C0EF98
+
+// ONSDAG HOLD
+// OnsH +20190102, +20190206, +20190306, +20190403, kl 18:30, farve #CC9933
+
+// TORSDAG
+TorA (2)20190110-20190307, kl 18:30, farve #F7CDCB
+TorA afsl +20190321, kl 17:30, farve #F7CDCB
+
+// TOP16
+Top16 +20190409, kl 18:30, farve #F7CDCB
+Top16 +20190410, kl 18:30, farve #F7CDCB
+
+// SOMMER
+Sommerbridge 20190501-20190529, kl 18:30, farve #F7CDCB
+Sommerbridge 20190807-20190830, kl 18:30, farve #F7CDCB
+
+// SOS
+SOS +20190127, kl 10 (9:30), farve #F5F7CB

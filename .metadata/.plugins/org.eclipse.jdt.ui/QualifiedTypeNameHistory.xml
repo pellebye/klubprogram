@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="_start.kalender.MinusWeekList"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.widgets.Display"/>
+<fullyQualifiedTypeName name="org.eclipse.swt.graphics.Font"/>
+<fullyQualifiedTypeName name="java.text.AttributedString"/>
+<fullyQualifiedTypeName name="java.awt.font.TextAttribute"/>
+<fullyQualifiedTypeName name="common.Data"/>
+<fullyQualifiedTypeName name="common.log.CommonLog"/>
+<fullyQualifiedTypeName name="_start.config.calendar.HandleCalendar"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="common.out.info.InfoClublineInConfigFileError"/>
+<fullyQualifiedTypeName name="common.out.info.InfoContingentCalculationError"/>
+<fullyQualifiedTypeName name="common.LocalMethods"/>
+<fullyQualifiedTypeName name="common.out.info.InfoUnexpectedError"/>
+</qualifiedTypeNameHistroy>

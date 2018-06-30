@@ -1,0 +1,2121 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Strict//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd'>
+<html xmlns='http://www.w3.org/1999/xhtml' dir='ltr' lang='da-DK'>
+<head>
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <title>Telefonliste</title>
+  <meta name='Author' content='Preben Ellebye' />
+  <meta name='revised' content='2018.6.29' />
+  <meta name='description' content='Telefonliste' />
+  <meta http-equiv='pragma' content='no-cache' />
+  <meta http-equiv='cache-control' content='no-cache' />
+  <link rel='stylesheet' type='text/css' href='tlf-list.css' />
+  <script type='text/javascript' src='./jquery-3.2.1.min.js'></script>
+  <script type='text/javascript' src='./tablesorter.js'></script>
+  <script type='text/javascript' src='./tlf-list.js'></script>
+  <script>
+  $(document).ready(function() {
+    $('#phoneTable')
+      .tablesorter({   
+      // default sortInitialOrder setting
+      sortInitialOrder: 'asc'
+    }); 
+    $('#phoneTable')
+      .bind('sortEnd',function(e, t){
+        $('.thin').remove();
+        $('.default').remove();
+        $('.highlight').remove();
+        $( 'tr' ).each(function( index ) {
+        	  if (index % 30 == 0){
+        	    if (index != 0){
+        	      $( this ).after("<tr class='header default'><td><b>Navn</b></td><td><b>Adresse</b></td><td><b>&nbsp;&nbsp;Telefon 1&nbsp;&nbsp;</b></td><td><b>&nbsp;&nbsp;Telefon 2&nbsp;&nbsp;</b></td><td><b>ManE</b></td><td><b>TirE</b></td><td><b>OnsF</b></td><td><b>OnsE</b></td><td><b>OnsA</b></td><td><b>OnsH</b></td><td><b>TorA</b></td><td><b>Dage ialt</b></td></tr>");
+        	    }
+        	  }
+        	  if (index % 5 == 0){
+        	    $( this ).after("<tr class='thin'><td colspan='12'></td></tr>");
+        	  }
+        });
+    });
+  }); 
+<!-- 
+--> 
+  </script>
+</head>
+
+<body onload='jump()'>
+
+<!--=====================================-->
+<!--          START HTML OUTPUT  -->
+<!--=====================================-->
+
+<div class='preben'>
+Klik p� en kolonne p� den �verste overskriftslinje for at sortere.
+<table id='phoneTable' class='tablesorter'>
+<thead><tr class='header'>
+<th><b>Navn</b></th>
+<th><b>Adresse</b></th>
+<th><b>&nbsp;&nbsp;Telefon 1&nbsp;&nbsp;</b></th>
+<th><b>&nbsp;&nbsp;Telefon 2&nbsp;&nbsp;</b></th>
+<th><b>ManE</b></th>
+<th><b>TirE</b></th>
+<th><b>OnsF</b></th>
+<th><b>OnsE</b></th>
+<th><b>OnsA</b></th>
+<th><b>OnsH</b></th>
+<th><b>TorA</b></th>
+<th><b>Dage ialt</b></th>
+</tr></thead>
+<tbody>
+<tr>
+<td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Aase Pedersen</td>
+<td class='Adresse'>Rosnæsvej 39</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54939269&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;51929269&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr><td class='Navn'>Aase Thomsen</td>
+<td class='Adresse'>Bresemanns Allé 67</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54939039&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;42259039&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Alice Rasmussen</td>
+<td class='Adresse'>Helgenæsvej 17</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54948063&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Andreas Jørgensen</td>
+<td class='Adresse'>Østersøvej 6, Sdr Egebølle</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54943367&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40347922&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>12</td>
+</tr>
+<tr><td class='Navn'>Anette Strange Thomsen</td>
+<td class='Adresse'>Resedavej 1</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54927003&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;28724339&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Anna Kirsten Poulsen</td>
+<td class='Adresse'>Lindevej 7 1.tv.</td>
+<td class='Telefon 1'>&nbsp;&nbsp;51220357&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Anna Villadsen</td>
+<td class='Adresse'>Nygade 5. 1</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54923317&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Anna-Lise Bay</td>
+<td class='Adresse'>Farimagsvej 20, Branderslev</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54921516&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;42447488&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr><td class='Navn'>Anne Lise Olsson</td>
+<td class='Adresse'>Nørredalsvej 24</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54939607&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;20764074&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Anne Lise Rasmussen</td>
+<td class='Adresse'>Bjernæsvej 30A, Bjernæs</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54600220&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;21231948&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Anne Marie Kristensen</td>
+<td class='Adresse'>Erantisvej 28</td>
+<td class='Telefon 1'>&nbsp;&nbsp;23828112&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Anne Marie Marcussen</td>
+<td class='Adresse'>Højrebyvej 96</td>
+<td class='Telefon 1'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Anne Nymann</td>
+<td class='Adresse'>Tårsvej 206</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54931081&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40716293&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Anne-Grete Callery</td>
+<td class='Adresse'>Falckvænget 4A</td>
+<td class='Telefon 1'>&nbsp;&nbsp;61790161&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>3</td>
+</tr>
+<tr><td class='Navn'>Annlis Thomsen</td>
+<td class='Adresse'>Skovgårdsvej 10</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54922692&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;41594659&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Bent Sunke</td>
+<td class='Adresse'>Skolebakken 47</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935467&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr><td class='Navn'>Bent Thomsen</td>
+<td class='Adresse'>Bresemanns Allé 67</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54939039&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Beth Søndergaard</td>
+<td class='Adresse'>Havnegade 45   01</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54928892&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;23434330&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Birgit Ravnholdt</td>
+<td class='Adresse'>Marius Nielsens Allé 21</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54923279&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40325167&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>11</td>
+</tr>
+<tr><td class='Navn'>Bjarne Hansen</td>
+<td class='Adresse'>Valdemarsvej 91</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54926209&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Bjørn Anderson</td>
+<td class='Adresse'>Jydevænget 17</td>
+<td class='Telefon 1'>&nbsp;&nbsp;40630513&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>3</td>
+</tr>
+<tr><td class='Navn'>Bo Bavngaard</td>
+<td class='Adresse'>Vejlegade 12</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54924051&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;23419313&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Bodil Bjerre Dannielsen</td>
+<td class='Adresse'>Krogsbøllevej 1</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54928283&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;29440011&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Bodil Clausen</td>
+<td class='Adresse'>Resedavej 10</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935032&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Bodil Friderichsen</td>
+<td class='Adresse'>Strandparken 23</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54762221&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Bodil Kurdahl</td>
+<td class='Adresse'>Bresemanns Allé 36</td>
+<td class='Telefon 1'>&nbsp;&nbsp;23983195&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Bodil Sørensen</td>
+<td class='Adresse'>Nybrogade 7B 2 tv</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54921721&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Boye Clausen</td>
+<td class='Adresse'>Øltappervej 5</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54711132&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Christian Bredal Nielsen</td>
+<td class='Adresse'>Svingelsvej 38</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54922533&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;30324089&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>7</td>
+</tr>
+<tr><td class='Navn'>Dan Nielsen</td>
+<td class='Adresse'>Rosnæsvej 69</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54927767&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr class='header default'>
+<td><b>Navn</b></td>
+<td><b>Adresse</b></td>
+<td><b>&nbsp;&nbsp;Telefon 1&nbsp;&nbsp;</b></td>
+<td><b>&nbsp;&nbsp;Telefon 2&nbsp;&nbsp;</b></td>
+<td><b>ManE</b></td>
+<td><b>TirE</b></td>
+<td><b>OnsF</b></td>
+<td><b>OnsE</b></td>
+<td><b>OnsA</b></td>
+<td><b>OnsH</b></td>
+<td><b>TorA</b></td>
+<td><b>Dage ialt</b></td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Ebba Larsen</td>
+<td class='Adresse'>Halsted Hedevej 94</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54939024&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;26739024&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Ebbe Christensen</td>
+<td class='Adresse'>Svingelsvej 106</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54954301&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40407343&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Einar Marcussen</td>
+<td class='Adresse'>Skelstrupvej 10, Skovbølle</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54932095&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Ellen Bredal Nielsen</td>
+<td class='Adresse'>Svingelsvej 38</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54922533&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>7</td>
+</tr>
+<tr><td class='Navn'>Ellen Hansen</td>
+<td class='Adresse'>Bresemanns Allé 49</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54927881&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;29912581&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Ellen Olsen</td>
+<td class='Adresse'>Rosenvænget 1 B</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54922218&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Ellis Nielsen</td>
+<td class='Adresse'>Byskovvej 1</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54932388&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;21954388&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Else Andersen</td>
+<td class='Adresse'>Tornskadevej 575</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935158&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;23848705&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr><td class='Navn'>Ena Schou Hansen</td>
+<td class='Adresse'>Nørrevænget 13</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935283&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;61332603&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Flemming Eriksen</td>
+<td class='Adresse'>Gartnervænget 30</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54925153&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;22722953&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Freddy Hansen</td>
+<td class='Adresse'>Tryghusevej 9</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54924040&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Grete Ebbe</td>
+<td class='Adresse'>Skalkenæsvej 12</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54922295&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;22989623&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Hanne Eriksen</td>
+<td class='Adresse'>Skodsebøllevej 21</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54616193&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Hanne Kolbye</td>
+<td class='Adresse'>Nybrogade 7 D, 3.</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54923004&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;20425466&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Hans Fausing</td>
+<td class='Adresse'>Øster Skovbyvej 20</td>
+<td class='Telefon 1'>&nbsp;&nbsp;40143620&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Hans Pedersen</td>
+<td class='Adresse'>Svingels Allé 54</td>
+<td class='Telefon 1'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Hans Peter Madsen</td>
+<td class='Adresse'>Rudbjergvej 9</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54944525&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Helene Daugbjerg</td>
+<td class='Adresse'>Nybrogade 7A 2 - 10</td>
+<td class='Telefon 1'>&nbsp;&nbsp;20477579&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Helga Bloch</td>
+<td class='Adresse'>Fynbovej 9</td>
+<td class='Telefon 1'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Henny Madsen</td>
+<td class='Adresse'>Maglehøjvej 15</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935483&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Ida Pade</td>
+<td class='Adresse'>Middelgrundsvej 4</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54931403&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Ilse Danneskiold-Samsøe</td>
+<td class='Adresse'>Hothersvej 25</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54600630&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;22485102&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Inga Jørgensen</td>
+<td class='Adresse'>Vindøvej 25</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54931152&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40881152&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Inge Hansen</td>
+<td class='Adresse'>Tryghusevej 9</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54924040&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Inge-Lise Krarup</td>
+<td class='Adresse'>Løvefod 28</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54921110&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;23806262&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Inger Marie Wibholm</td>
+<td class='Adresse'>Søndre Boulevard 12</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54780902&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;21622088&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>1</td>
+</tr>
+<tr><td class='Navn'>Ingrid Hansen</td>
+<td class='Adresse'>Jasminvej 6</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54923132&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;23203132&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Ivar Karup Rasmussen</td>
+<td class='Adresse'>Jydevænget 11</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54927190&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;24463185&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Ivar Rasmussen</td>
+<td class='Adresse'>Rudbjerg Strandvej 21</td>
+<td class='Telefon 1'>&nbsp;&nbsp;51197985&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Janne Bøgh</td>
+<td class='Adresse'>Bønnekevej 14</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54928588&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;30749192&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr class='header default'>
+<td><b>Navn</b></td>
+<td><b>Adresse</b></td>
+<td><b>&nbsp;&nbsp;Telefon 1&nbsp;&nbsp;</b></td>
+<td><b>&nbsp;&nbsp;Telefon 2&nbsp;&nbsp;</b></td>
+<td><b>ManE</b></td>
+<td><b>TirE</b></td>
+<td><b>OnsF</b></td>
+<td><b>OnsE</b></td>
+<td><b>OnsA</b></td>
+<td><b>OnsH</b></td>
+<td><b>TorA</b></td>
+<td><b>Dage ialt</b></td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Janne Fausing</td>
+<td class='Adresse'>Øster Skovbyvej 20</td>
+<td class='Telefon 1'>&nbsp;&nbsp;21274352&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40143620&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Jens Erik Jensen</td>
+<td class='Adresse'>Bækkevej 5</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54941207&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;20209151&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr><td class='Navn'>Jens Høyer</td>
+<td class='Adresse'>Strandvej 5</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54932020&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;23257306&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Jesper Seidelin Bøgh</td>
+<td class='Adresse'>Bønnekevej 14</td>
+<td class='Telefon 1'>&nbsp;&nbsp;29879697&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;29879697&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Jessy Stærke</td>
+<td class='Adresse'>Svingelsvej 42</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54955660&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40152117&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Jette Hansen</td>
+<td class='Adresse'>Rudbjergvej 9</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54944525&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Jette Keldebæk</td>
+<td class='Adresse'>Violvej 18</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54921895&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>John Abildgaard</td>
+<td class='Adresse'>Ved Dampmøllen 3B, 02 0013</td>
+<td class='Telefon 1'>&nbsp;&nbsp;40917785&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>14</td>
+</tr>
+<tr><td class='Navn'>Jørgen Jensen</td>
+<td class='Adresse'>Vindtoftevej 12</td>
+<td class='Telefon 1'>&nbsp;&nbsp;21486012&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Jørgen Kamdahl</td>
+<td class='Adresse'>Svingelsvej 84</td>
+<td class='Telefon 1'>&nbsp;&nbsp;20294840&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>7</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Jørgen Madsen</td>
+<td class='Adresse'>Maglehøjvej 15</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935483&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Jørgen Marcussen</td>
+<td class='Adresse'>Højrebyvej 96</td>
+<td class='Telefon 1'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Jørgen Nielsen</td>
+<td class='Adresse'>Bygaden 75</td>
+<td class='Telefon 1'>&nbsp;&nbsp;61755222&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Jørn Viggo Christensen</td>
+<td class='Adresse'>Solsikkevej 3</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54920455&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Karen Høj</td>
+<td class='Adresse'>Resedavej 5</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54955025&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;20273251&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Karin Fallesen</td>
+<td class='Adresse'>Jydevænget 8</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54928494&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;20344433&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Karin Høyer</td>
+<td class='Adresse'>Strandvejen 5</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54932020&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;23257306&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Karin Poulsen</td>
+<td class='Adresse'>Ludvigshavevej 12</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54938014&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;51204980&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Karl Aage Due</td>
+<td class='Adresse'>Louisevænget 20</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54939137&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Kirsten Gulløv</td>
+<td class='Adresse'>Teglmarken 11</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54924438&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;51359912&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Kirsten Holst</td>
+<td class='Adresse'>Vindøvej 46</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54932310&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Kirsten Jensen</td>
+<td class='Adresse'>Violvej 8</td>
+<td class='Telefon 1'>&nbsp;&nbsp;40688552&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;20112725&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Kirsten Koefoed</td>
+<td class='Adresse'>Æblehaven 1</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54921102&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;21647988&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr><td class='Navn'>Kirsten Marcussen</td>
+<td class='Adresse'>Skelstrupvej 10, Skovbølle</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54932095&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Kirsten Theil</td>
+<td class='Adresse'>Maglehøjvej 25</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935402&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;24981855&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Knud Dideriksen</td>
+<td class='Adresse'>Tornskadevej 9</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54922551&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Knud Frandsen</td>
+<td class='Adresse'>Hans Fugls Vej  29</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935411&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;24407058&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Knud Stærke</td>
+<td class='Adresse'>Svingelsvej 42</td>
+<td class='Telefon 1'>&nbsp;&nbsp;28957137&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Kurt Simonsen</td>
+<td class='Adresse'>Vestmosevej 15</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54926040&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;23235040&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>9</td>
+</tr>
+<tr><td class='Navn'>Lars Barfoed-Høj</td>
+<td class='Adresse'>Skodsebøllevej 57, Bådsgård</td>
+<td class='Telefon 1'>&nbsp;&nbsp;20439102&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr class='header default'>
+<td><b>Navn</b></td>
+<td><b>Adresse</b></td>
+<td><b>&nbsp;&nbsp;Telefon 1&nbsp;&nbsp;</b></td>
+<td><b>&nbsp;&nbsp;Telefon 2&nbsp;&nbsp;</b></td>
+<td><b>ManE</b></td>
+<td><b>TirE</b></td>
+<td><b>OnsF</b></td>
+<td><b>OnsE</b></td>
+<td><b>OnsA</b></td>
+<td><b>OnsH</b></td>
+<td><b>TorA</b></td>
+<td><b>Dage ialt</b></td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Laurs Moryl Kristensen</td>
+<td class='Adresse'>Erantisvej 28</td>
+<td class='Telefon 1'>&nbsp;&nbsp;61727220&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Lea Eisenhardt</td>
+<td class='Adresse'>Irisvej 26</td>
+<td class='Telefon 1'>&nbsp;&nbsp;30222908&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Lene Abildgaard</td>
+<td class='Adresse'>Ved Dampmøllen 3B, 02 0013</td>
+<td class='Telefon 1'>&nbsp;&nbsp;20843985&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Lene Løvstrand</td>
+<td class='Adresse'>Valmuevej  9</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54923291&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Lilian Nielsen</td>
+<td class='Adresse'>Madeskovvej 3</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54953756&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Lilli Baad Pedersen</td>
+<td class='Adresse'>Svingels Allé 54</td>
+<td class='Telefon 1'>&nbsp;&nbsp;28440971&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Lillian Pedersen</td>
+<td class='Adresse'>Strandvej 24B, 02. tv.</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54939100&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;21722748&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>3</td>
+</tr>
+<tr><td class='Navn'>Lis Nielsen</td>
+<td class='Adresse'>Adamsgavevej 90, Branderslev</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54931156&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;29252850&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Lise Barfoed-Høj</td>
+<td class='Adresse'>Skodsebøllevej 57, Bådsgård</td>
+<td class='Telefon 1'>&nbsp;&nbsp;21459594&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Lise Haugaard Jensen</td>
+<td class='Adresse'>Teglmarken 10</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54958297&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;22375510&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>11</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Lise Madsen</td>
+<td class='Adresse'>Skodsebøllevej 33</td>
+<td class='Telefon 1'>&nbsp;&nbsp;52404207&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;29362030&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Lizzi Rzempala</td>
+<td class='Adresse'>Magasinvej 15 A</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54606557&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>1</td>
+</tr>
+<tr><td class='Navn'>Lone Harsig</td>
+<td class='Adresse'>Syrenvej 5</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54926288&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40502264&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>11</td>
+</tr>
+<tr><td class='Navn'>Lotte Bolding</td>
+<td class='Adresse'>Rudbjerg Strandvej 25</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54944311&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Marianne De La Motte</td>
+<td class='Adresse'>Skalkenæsvej 13</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54924243&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;42428200&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Marianne Øst</td>
+<td class='Adresse'>Byskovvej 94</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54933892&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;22589238&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Merete Christensen</td>
+<td class='Adresse'>Solsikkevej 3</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54920455&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;28573080&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>1</td>
+</tr>
+<tr><td class='Navn'>Mette E Truelsen</td>
+<td class='Adresse'>Margrethevænget 1</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54921903&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;28711903&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Mogens Bloch</td>
+<td class='Adresse'>Fynbovej 9</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935081&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;24987690&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Mogens Ekstrøm</td>
+<td class='Adresse'>Birkevænget 13A, 1. tv.</td>
+<td class='Telefon 1'>&nbsp;&nbsp;40380547&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40380547&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Mogens Rasmussen</td>
+<td class='Adresse'>Solsikkevej 19</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54951745&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>7</td>
+</tr>
+<tr><td class='Navn'>Mogens Schytte</td>
+<td class='Adresse'>Valmuevej 11</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54951599&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;24433022&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Mona Schytte</td>
+<td class='Adresse'>Valmuevej 11</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54951599&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;23841599&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>9</td>
+</tr>
+<tr><td class='Navn'>Ole Bolding</td>
+<td class='Adresse'>Rudbjerg Strandvej 25</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54944311&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Ole Jørgensen</td>
+<td class='Adresse'>Vindøvej 25</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54931152&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40881152&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Ole Keldebæk</td>
+<td class='Adresse'>Violvej 18</td>
+<td class='Telefon 1'>&nbsp;&nbsp;61681895&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Ole Kjær Rasmussen</td>
+<td class='Adresse'>Engene 4</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54944724&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;27248225&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>5</td>
+</tr>
+<tr><td class='Navn'>Ole Krarup</td>
+<td class='Adresse'>Løvefod 28</td>
+<td class='Telefon 1'>&nbsp;&nbsp;21490767&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Ole Thorsen</td>
+<td class='Adresse'>Gammelbyvej 15</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54922443&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;22882898&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Otto Danneskiold-Samsøe</td>
+<td class='Adresse'>Hothersvej 25</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54600630&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;22485102&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr class='header default'>
+<td><b>Navn</b></td>
+<td><b>Adresse</b></td>
+<td><b>&nbsp;&nbsp;Telefon 1&nbsp;&nbsp;</b></td>
+<td><b>&nbsp;&nbsp;Telefon 2&nbsp;&nbsp;</b></td>
+<td><b>ManE</b></td>
+<td><b>TirE</b></td>
+<td><b>OnsF</b></td>
+<td><b>OnsE</b></td>
+<td><b>OnsA</b></td>
+<td><b>OnsH</b></td>
+<td><b>TorA</b></td>
+<td><b>Dage ialt</b></td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Otto Kjærstrup</td>
+<td class='Adresse'>Svingelsvej 21</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54923711&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Otto Larsen</td>
+<td class='Adresse'>Halsted Hedevej 94</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54939024&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;26739024&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Palle Truelsen</td>
+<td class='Adresse'>Margrethevænget 1</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54921903&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;30137049&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr><td class='Navn'>Per Tobiasen</td>
+<td class='Adresse'>Abildtorpe Mose 14</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54923200&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;20302667&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>12</td>
+</tr>
+<tr><td class='Navn'>Peter Muggli</td>
+<td class='Adresse'>Rudbjergstrandvej 15</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54944520&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Pia Muggli</td>
+<td class='Adresse'>Rudbjergstrandvej 15</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54944520&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Poul Christensen</td>
+<td class='Adresse'>Skovnæsvej 16</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54758649&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40360111&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Poul Erik Kofod</td>
+<td class='Adresse'>Strandvej 28</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54923292&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;20412849&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>3</td>
+</tr>
+<tr><td class='Navn'>Povl R Andersen</td>
+<td class='Adresse'>Tornskadevej 107</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54948314&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;20623821&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>7</td>
+</tr>
+<tr><td class='Navn'>Preben Ellebye</td>
+<td class='Adresse'>Vester Oddevej 7B</td>
+<td class='Telefon 1'>&nbsp;&nbsp;30423535&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>11</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Ragnhild Due</td>
+<td class='Adresse'>Margrethevænget 7</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54951914&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr><td class='Navn'>Regnar Nymann</td>
+<td class='Adresse'>Tårsvej 206</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54931089&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40716293&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Rita Petersen</td>
+<td class='Adresse'>Kattehale 38</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54924314&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;21492470&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Signe Rasmussen</td>
+<td class='Adresse'>Jydevænget 11</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54927190&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Sigurd Kolbye</td>
+<td class='Adresse'>Nybrogade 7 D, 3.</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54923004&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;20425466&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'>OnsA</td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Sonja Langhorn</td>
+<td class='Adresse'>Marius Nielsens Alle 8</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54923938&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;40813938&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr><td class='Navn'>Susanne Jørgensen</td>
+<td class='Adresse'>Østersøvej 6, Sdr Egebølle</td>
+<td class='Telefon 1'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Svend Aage Christensen</td>
+<td class='Adresse'>Skovhusevej 42</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54937188&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Tage Hansen</td>
+<td class='Adresse'>Nørrevænget 13</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935283&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;29917011&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr><td class='Navn'>Torben Jensen</td>
+<td class='Adresse'>Christiansdalsvej 52</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54955598&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;29273683&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>8</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Torben Løvstrand</td>
+<td class='Adresse'>Valmuevej 9</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54923291&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Torben Theil</td>
+<td class='Adresse'>Maglehøjvej 25</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935402&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;24981855&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Ulla Bay</td>
+<td class='Adresse'>Stor Riddersborg, Bogøvej 8</td>
+<td class='Telefon 1'>&nbsp;&nbsp;40288112&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>6</td>
+</tr>
+<tr><td class='Navn'>Ulla Frandsen</td>
+<td class='Adresse'>Hans Fugls Vej 29</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54935411&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;24407058&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+<tr><td class='Navn'>Verner Gulløv Andersen</td>
+<td class='Adresse'>Teglmarken 11</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54924438&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;23264438&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'>OnsE</td>
+<td class='OnsA'> </td>
+<td class='OnsH'>OnsH</td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>11</td>
+</tr>
+<tr class='thin'><td colspan='12'></td></tr>
+<tr><td class='Navn'>Vibeke Skov Nielsen</td>
+<td class='Adresse'>Solsikkevej 29</td>
+<td class='Telefon 1'>&nbsp;&nbsp;27515422&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class='ManE'>ManE</td>
+<td class='TirE'> </td>
+<td class='OnsF'>OnsF</td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>10</td>
+</tr>
+<tr><td class='Navn'>Vivi Kruse</td>
+<td class='Adresse'>Ladegårdsvej 101, st. tv., Branderslev</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54922339&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;23378139&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'> </td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'>TorA</td>
+<td class='Dage ialt'>2</td>
+</tr>
+<tr><td class='Navn'>Willy Nordahl Hansen</td>
+<td class='Adresse'>Vinkelvej 6</td>
+<td class='Telefon 1'>&nbsp;&nbsp;54939563&nbsp;&nbsp;</td>
+<td class='Telefon 2'>&nbsp;&nbsp;20439480&nbsp;&nbsp;</td>
+<td class='ManE'> </td>
+<td class='TirE'>TirE</td>
+<td class='OnsF'> </td>
+<td class='OnsE'> </td>
+<td class='OnsA'> </td>
+<td class='OnsH'> </td>
+<td class='TorA'> </td>
+<td class='Dage ialt'>4</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+<div>
+  <!-- XHTML validation ok -->
+  <p>
+    <a href="http://validator.w3.org/check?uri=referer">
+    <img src="http://www.w3.org/Icons/valid-xhtml10"
+alt="Valid XHTML 1.0 Transitional" height="31" width="88" /></a>
+  </p>
+  <!-- CSS validation ok -->
+  <p>
+    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:88px;height:31px"
+      src="http://jigsaw.w3.org/css-validator/images/vcss"
+      alt="Valid CSS!" />
+</a>
+</p>
+</div>
+
+<!--======================================-->
+<!-- SLUT PÅ HTML OUTPUT FRA BRIDGECHARTS -->
+<!--======================================-->
+
+</body>
+</html>

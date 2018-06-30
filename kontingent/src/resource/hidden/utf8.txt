@@ -1,0 +1,32 @@
+*utf8
+//********************************************************************************
+// Denne funktion kan bruges uafhængigt af programmets øvrige funktioner ved at 
+// anbringe den forrest i konfigurationsfilen (config.txt).
+//
+// Hvis denne komando findes konverteres ascii karakterer:
+// "Ã¦", "æ"
+// "Ã", "Æ"
+// "Ã¸", "ø"
+// "Ã", "Ø"
+// "Ã¥", "å"
+// "Ã…", "Å"
+
+// og ISO 8859 karakterer:
+// "xE6", "æ"
+// "xC6", "Æ"
+// "xF8", "ø"
+// "xD8", "Ø"
+// "xE5", "å"
+// "xC5", "Å"
+
+// Mappen / filen må være placeret i klubprogrammets rod.
+// Bruges ved fejl i encodingen.
+//********************************************************************************
+*utf8 \tekst\manA.txt
+\tekst\manE.txt
+\tekst\onsA.txt
+\tekst\onsE.txt
+\tekst\onsF.txt
+\tekst\onsH.txt
+\tekst\tirE.txt
+\tekst\torA.txt

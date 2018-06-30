@@ -1,0 +1,191 @@
+html {
+	background-color: #EDE8BC;   /* Gullig farve */
+}
+
+body {
+	color: #333;
+	padding: 0 40px 40px 40px;
+	font-family: "Lucida Grande", Verdana, sans-serif;
+	font-size: 12px;
+	line-height: 1;
+	text-align: center;
+}
+a {
+    color: #000;
+    text-decoration: none;
+}
+.redText{
+    color: #F00;
+}
+.contentWidthSambridge{
+    width: 855px;   
+ }
+.head{
+ 	float: left;
+    width: 275px;   
+	margin: 5px;
+}
+#samHead{
+	font-size: 70px;
+    color: #FFF;
+ 	font-weight: bold;   
+	background: #C93;
+	border-top: 1px solid #C93;
+	border-right: 1px solid #C93;
+	border-bottom: 1px solid #967227;
+	border-left: 1px solid #C93;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+ }
+#samSubhead{
+ 	font-size: 18px;
+	padding: 10px 5px;
+}
+#vejledning{
+	text-align: left;	
+	font-size: 18px;
+}
+.small{
+	float: left;
+	font-size: 13px;
+	background: #3700D6;
+    font-family: arial;
+    color: #000;
+ 	font-weight: bold;   
+	border-top: 2px solid #C93;
+	border-right: 2px solid #C93;
+	border-bottom: 1px solid #967227;
+	border-left: 1px solid #C93;
+	width: 265px;
+    height: 20px;
+	margin: 8px 0 0 0;
+	padding: 10px 5px 5px 5px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px; 
+ }
+.samOtherClubsWrap{
+	width: 100%;
+	margin: 250px 0 0 0;
+}
+.samOtherClubs{
+    text-align: left;
+    text-indent: 50px;
+	float: left;
+	background: #edc183;
+    color: #000;
+	border-top: 1px solid #C93;
+	border-right: 1px solid #C93;
+	border-bottom: 1px solid #967227;
+	border-left: 1px solid #C93;
+	width: 48%;
+    height: 20px;
+	margin: 5px 2px 5px 220px;
+	padding: 10px 5px 5px 5px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px; 
+}
+.samOtherClubs:hover{
+   background: #c93;
+}
+/* Sidste nyt i mørkerød */
+.otherClubsDarkred{
+    text-align: left;
+    text-indent: 50px;
+	float: left;
+  background: #FF2B3B;
+    color: #000;
+	border-top: 1px solid #C93;
+	border-right: 1px solid #C93;
+	border-bottom: 1px solid #967227;
+	border-left: 1px solid #C93;
+	width: 48%;
+    height: 20px;
+	margin: 5px 2px 5px 220px;
+	padding: 10px 5px 5px 5px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px; 
+}
+.otherClubsDarkred:hover{
+    background: #FF8F98;
+}
+
+.category{
+	float: left;
+	font-size: 18px;
+    color: #03F;
+ 	font-weight: bold;   
+	border-top: 1px solid #C93;
+	border-right: 1px solid #C93;
+	border-bottom: 1px solid #967227;
+	border-left: 1px solid #C93;
+    height: 60px;
+	padding: 20px 5px 5px 5px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px; 
+	width: 265px;
+}
+.lowFont{
+    font-size: 13px;
+}
+.highFont{
+    font-size: 18px;
+}
+/* gule knapper */
+.guleKnapper{
+   width:200px; 
+   height:37px; 
+   float: left;
+   background-color: #FFDE4A; 
+   color: #DE4A08; 
+   font-family: Arial; 
+   font-size: 18px; 
+   font-weight: 700
+}
+.guleKnapper:hover {background-color: #F7F786;}   
+#bridgeklubber{
+   width:450px;
+}
+
+
+ /* blue */
+.blue{	background: #41CCFF;
+ }
+ .blue:hover{
+ background: #00A1DC;
+ }
+  .blueWhite{	background: #E1F7FF;
+ }
+.blueWhite:hover{
+ background: #41CCFF;
+ }
+
+ /* red */
+ .red{	
+    background: #FF8F98;
+ }
+ .red:hover{
+ background: #FF2B3B;
+ }
+ .redWhite{
+background: #FFF3F4;
+ }
+.redWhite:hover{
+ background: #FF8F98;
+ }
+ 
+ /* green */
+.green{	background: #41FFB3;
+ }
+.green:hover{
+ background: #00DC84;
+ }
+ .greenWhite{	background: #E1FFF3;
+ }
+.greenWhite:hover{
+ background: #41FFB3;
+ }
+
+/* just information */
+.winnerRed{	background-color: #FF0000; }
+.winnerYellow{ background-color: #FFFD00; }
+.winnerGreen{ background-color: #00FF00; }

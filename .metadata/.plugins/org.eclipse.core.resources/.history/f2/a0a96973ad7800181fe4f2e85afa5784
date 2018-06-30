@@ -1,0 +1,14 @@
+package _start.config;
+
+import common.log.CommonLog;
+
+public class CreatePlayTimeDates {
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	public CreatePlayTimeDates(){
+		CommonLog.logger.info("heading//");
+
+   }
+}

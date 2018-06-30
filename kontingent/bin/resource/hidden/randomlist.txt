@@ -1,0 +1,17 @@
+*randomliste
+//********************************************************************************
+// Denne funktion kan bruges uafh�ngigt af programmets �vrige funktioner ved at 
+// anbringe den forrest i konfigurationsfilen (config.txt).
+//
+// Her angives hvor mange csv-filer med tilfældige tal der skal genereres. 
+// Angives fx "8 - 32" vil der blive genereret 25 lister med tal i tilfældig 
+// rækkefølge, nemlig een fil med tallene 1-8 i tilfældig rækkefølge, een fil 
+// med tallene 1-9 i tilfældig rækkefølge osv. Indholdet i filerne kan direkte 
+// indgå som r�kker i et regneark.
+//
+// Bruges torsdag aften til at placere parrene i tilfældig rækkefølge ved 
+// sæsonenstart.
+//********************************************************************************
+8 - 30
+
+

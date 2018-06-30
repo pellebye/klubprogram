@@ -1,0 +1,20 @@
+package _start.kalender;
+
+import common.log.CommonLog;
+
+public class MinusWeekList {
+
+	private int year = 0;
+
+	public int getYear() {
+		return year;
+	}
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	public MinusWeekList() {
+		CommonLog.logger.info("heading//");
+
+	}
+}

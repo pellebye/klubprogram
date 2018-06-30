@@ -1,0 +1,12 @@
+package _start.config;
+
+public class CreatePlayTimeDates {
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	public class_name(){
+      BridgeBuddy.logger.info("heading//");
+
+   }
+}

@@ -1,0 +1,19 @@
+*addon
+//********************************************************************************
+// Denne funktion kan bruges uafhængigt af programmets øvrige funktioner ved at 
+// anbringe den forrest i konfigurationsfilen (config.txt).
+//
+// Hvis denne komando findes sættes koder foran og bagpå linjer i angivet filnavn.
+// Fx '<li><h3> </h3></li> \tekst\tekst.txt' indsætter <li><h3> foran hver linje og 
+// </h3></li> efter hver linje i ovennævnte tekstfil. Mappen må være placeret i
+// klubprogrammets rod.
+// Bruges ved listning af tilmeldinger på nettet.
+//********************************************************************************
+<li><h3> </h3></li> \tekst\manA.txt
+<li><h3> </h3></li> \tekst\manE.txt
+<li><h3> </h3></li> \tekst\onsA.txt
+<li><h3> </h3></li> \tekst\onsE.txt
+<li><h3> </h3></li> \tekst\onsF.txt
+<li><h3> </h3></li> \tekst\onsH.txt
+<li><h3> </h3></li> \tekst\tirE.txt
+<li><h3> </h3></li> \tekst\torA.txt

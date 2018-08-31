@@ -1,0 +1,63 @@
+package _start.GmailContact;
+
+import java.util.ArrayList;
+
+import _start.kontingent.Person;
+import common.Data;
+import common.log.CommonLog;
+
+public class GmailContact {
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	public GmailContact() {
+		CommonLog.logger.info("heading//");
+
+		ArrayList<Person> mergedPersons = Data.getMergedPersons();
+		getGmailPhonelist(mergedPersons);
+	}
+
+	private void getGmailPhonelist(ArrayList<Person> mergedPersons) {
+		for (int i = 0; i < mergedPersons.size(); i++) {
+			Person person = mergedPersons.get(i);
+			ArrayList<String> phonelist = person.getGmailPhone();
+			checkDuplicates(phonelist);
+		}
+	}
+
+	private void checkDuplicates(ArrayList<String> phonelist) {
+		for (int i = 0; i < phonelist.size(); i++) {
+			String phoneNumber1 = phonelist.get(i);
+			/*
+			 * Delete duplicate phone numbers.
+			 */
+			for (int j = 0; j < phonelist.size(); j++) {
+				// Don't compare to itself.
+				if (i != j) {
+					String phoneNumber2 = phonelist.get(j);
+					if (phoneNumber1.compareTo(phoneNumber2) == 0) {
+						// if duplicate phone number delete the second one.
+						phonelist.set(j, "");
+					}
+				}
+			}
+			/*
+			 * Set empty phone numbers last.
+			 */
+			boolean goOn = true;
+			while (goOn) {
+				goOn = false;
+				for (int j = 0; j < phonelist.size() - 1; j++) {
+					// if not a phone number.
+					if (phonelist.get(j).length() < 11) {
+						phonelist.set(j, phonelist.get(j + 1));
+						phonelist.set(j + 1, "");
+					}
+				}
+			}
+			int k = 8;
+		}
+	}
+
+}

@@ -1,0 +1,230 @@
+package _start;
+
+import java.io.IOException;
+import java.util.logging.FileHandler;
+import java.util.logging.Handler;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.RowLayout;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Shell;
+
+import _start.GmailContact.GmailContactPrintout;
+import _start.config.Configuration;
+import _start.kalender.HtmlKalender;
+import _start.kontingent.ContingentCalculate;
+import _start.kontingent.ContingentPrintOut;
+import _start.kontingent.PersonsSetup;
+import _start.kontingent.TotalPlayDays;
+import _start.randomList.ShuffleList;
+import _start.telephoneList.PhoneList;
+import _start.vejledning.Vejledning;
+import common.LocalMethods;
+import common.Status;
+import common.log.BBLog;
+import common.log.CommonLog;
+import common.log.LogFormatter;
+import common.out.file.filetest.Filetest;
+import common.out.info.InfoContingentPlusErrors;
+import common.system.CheckSystemFiles;
+
+public class ProgramProcess {
+	/**
+	 * Logger to log activity structure. Use:
+	 * <ol>
+	 * <li>"class//" for class- and method information.</li>
+	 * <li>"event//" for events, i.e. update or notify.</li>
+	 * <li>"message//" for only message information.</li>
+	 * <li>'heading//' Logs a class heading.</li>
+	 * <li>"time//" for time information.</li>
+	 * <li>"mark//" for marking with <- MARK -> <- MARK ->.</li>
+	 * </ol>
+	 */
+	public static Logger logger = Logger.getLogger(CommonLog.class.getName());
+
+	private static String logPathAndFilename = "system/log/log.txt";
+
+	@SuppressWarnings("unused")
+	private String version = "version 1_1";
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	/**
+	 * This class creates contingent list and a phone list.
+	 * 
+	 * It is decided (check main class) that if 'tablesorter.js' in system folder
+	 * does not exist then the program has been started for the first time.
+	 * 
+	 * @param shell
+	 *            Current shell.
+	 * @param logLevel
+	 *            Level of logging.
+	 */
+	public ProgramProcess(final Shell shell, Level logLevel) {
+
+		new Vejledning();
+
+		new Configuration();
+
+		new ConvertToUtf8();
+
+		new PersonsSetup();
+
+		new TotalPlayDays();
+
+		new ContingentCalculate();
+
+		new ContingentPrintOut();
+
+		new PhoneList();
+
+		new GmailContactPrintout();
+
+		new ShuffleList();
+
+		new HtmlKalender();
+
+		new InfoContingentPlusErrors();
+		System.exit(0);
+	}
+
+	/**
+	 * MAIN
+	 *
+	 * @param args
+	 * @throws IOException
+	 * @throws InterruptedException
+	 */
+	public static void main(String[] args) throws IOException, InterruptedException {
+
+		/*
+		 * Create main shell.
+		 */
+		Display display = new Display();
+		Shell shell = new Shell(display);
+		shell.setLayout(new RowLayout(SWT.VERTICAL));
+		shell.setData("shell");
+		shell.setText("Medlemsliste");
+		LocalMethods.setShell(shell);
+
+		/*
+		 * Set log level.
+		 */
+		Level defaultLevel = Level.FINE;
+
+		/*
+		 * Create logger.
+		 */
+		createLogger(defaultLevel);
+		CommonLog.logger.info("heading//" + "Klubprogram (loglevel = " + defaultLevel + ")");
+
+		/*
+		 * It is decided that if 'tablesorter.js' in system folder does not exist then
+		 * the program has been started for the first time. Version number in 'ShellAbout'.
+		 */
+		checksImportantFilesAndFoldersArePresent();
+
+		new ProgramProcess(shell, defaultLevel);
+
+		shell.pack();
+		shell.open();
+		while (!shell.isDisposed()) {
+			if (!display.readAndDispatch())
+				display.sleep();
+		}
+		display.dispose();
+	}
+
+	/**
+	 * Creates a new logger with a formatter (LogFormatter) and a log file. The log
+	 * file will be in /system/log directory. But if directory does not exist yet
+	 * (when program start for the first time) the log file will be in program user
+	 * directory.
+	 * 
+	 * @param level
+	 *            Current log level
+	 */
+	private static void createLogger(Level level) {
+		logger.info("class//");
+
+		createLogfiles();
+
+		try {
+			Handler logHandler = new FileHandler(logPathAndFilename);
+			logHandler.setFormatter(new LogFormatter());
+			common.log.BBLog.getLogger(CommonLog.class.getName()).addHandler(logHandler);
+			BBLog.getLogger(CommonLog.class.getName()).setLevel(level);
+			BBLog.logStart();
+		} catch (SecurityException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * Creates a log path for current logger:
+	 * <ol start=1>
+	 * <li>If /system/log folder does not exist (i.e. when first start of program)
+	 * log folder will be 'user directory' which is default in log handler.</li>
+	 * <li>Number log files log, log1, log2 etc. and create the first free
+	 * number.</li>
+	 * <li>Delete all log files when 25 log files in log folder.</li>
+	 * </ol>
+	 */
+	private static void createLogfiles() {
+		String logPath = "/system/log";
+
+		Filetest filetest;
+		filetest = new Filetest("/system/log");
+		filetest.setModeChecks(common.out.file.filetest.ModeChecks.FOLDEREXISTS);
+		filetest.setModeCheckDetail(common.out.file.filetest.ModeCheckDetail.LOGSTARTUP);
+		filetest.setSystemExit(true);
+		filetest.setType(common.out.file.filetest.TypeOfTest.FILE_FOLDER);
+
+		// new MessagesAndChecks(null, ModeChecks.FILETEST_SYSTEMFILES,
+		// filetest);
+
+		/*
+		 * If /system/log/ does not exist use 'user directory' which is default in
+		 * 'logHandler'. When a total of 25 logs are in log folder delete all and start
+		 * over again from log1.
+		 */
+		if (filetest.getStatus() == common.Status.FILEDOESNOTEXIST) {
+			/*
+			 * Create log file in user 'user directory'.
+			 */
+			logPathAndFilename = "log.txt";
+		} else {
+			/*
+			 * Log folder exists. Create new log file in log file sequence.
+			 */
+			common.log.CreateCurrentLogFile currentLogFile = new common.log.CreateCurrentLogFile(logPath);
+			logPathAndFilename = currentLogFile.getLogPathAndFilename();
+			currentLogFile = null;
+
+			// deleteComDataLogFiles();
+		}
+	}
+
+	/**
+	 * Return status after having checked that important files and folders are
+	 * present.
+	 */
+	private static void checksImportantFilesAndFoldersArePresent() {
+		CheckSystemFiles systemFiles = new CheckSystemFiles();
+		Status status = systemFiles.getStatus();
+		systemFiles = null;
+
+		if (status == Status.ERROR) {
+			/*
+			 * Status must be ok. At this point important folders and files are present but
+			 * language has not yet been initialized.
+			 */
+			throw new IllegalArgumentException("Member list Wrong status = " + status);
+		}
+	}
+}

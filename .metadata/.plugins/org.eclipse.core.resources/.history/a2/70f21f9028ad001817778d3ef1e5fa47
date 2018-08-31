@@ -1,0 +1,200 @@
+package _start.GmailContact;
+
+import java.util.ArrayList;
+
+import _start.kontingent.Person;
+import common.Data;
+import common.log.CommonLog;
+
+/**
+ * This class creates a line for each person to be used for import into gmail.
+ */
+public class GmailImportContacts {
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	/**
+	 * This class creates a line for each person to be used for import into gmail.
+	 * 
+	 * <ul>
+	 * <li>1 Name</li>
+	 * <li>2 Given Name</li>
+	 * <li>3 Additional Name</li>
+	 * <li>4 Family Name</li>
+	 * <li>5 Yomi Name</li>
+	 * <li>6 Given Name Yomi</li>
+	 * <li>7 Additional Name Yomi</li>
+	 * <li>8 Family Name Yomi</li>
+	 * <li>9 Name Prefix</li>
+	 * <li>10 Name Suffix</li>
+	 * <li>11 Initials</li>
+	 * <li>12 Nickname</li>
+	 * <li>13 Short Name</li>
+	 * <li>14 Maiden Name</li>
+	 * <li>15 Birthday</li>
+	 * <li>16 Gender</li>
+	 * <li>17 Location</li>
+	 * 
+	 * <li>18 Billing Information</li>
+	 * <li>19 Directory Server</li>
+	 * <li>20 Mileage</li>
+	 * <li>21 Occupation</li>
+	 * <li>22 Hobby</li>
+	 * <li>23 Sensitivity</li>
+	 * <li>24 Priority</li>
+	 * <li>25 Subject</li>
+	 * 
+	 * <li>26 Notes</li>
+	 * <li>27 Language</li>
+	 * <li>28 Photo</li>
+	 * <li>29 Group Membership</li>
+	 * <li>30 E-mail 1 - Type</li>
+	 * 
+	 * <li>31 E-mail 1 - Value</li>
+	 * <li>32 E-mail 2 - Type</li>
+	 * <li>33 E-mail 2 - Value</li>
+	 * <li>34 Phone 1 - Type</li>
+	 * 
+	 * <li>35 Phone 1 - Value</li>
+	 * <li>36 Phone 2 - Type</li>
+	 * <li>37 Phone 2 - Value</li>
+	 * <li>38 Phone 3 - Type</li>
+	 * <li>39 Phone 3 - Value</li>
+	 * <li>40 Address 1 - Type</li>
+	 * 
+	 * <li>41 Address 1 - Formatted</li>
+	 * <li>42 Address 1 - Street</li>
+	 * <li>43 Address 1 - City</li>
+	 * <li>44 Address 1 - PO Box</li>
+	 * <li>45 Address 1 - Region</li>
+	 * <li>46 Address 1 - Postal Code</li>
+	 * <li>47 Address 1 - Country</li>
+	 * <li>48 Address 1 - Extended Address</li>
+	 * <li>49 Address 2 - Type</li>
+	 * 
+	 * <li>50 Address 2 - Formatted</li>
+	 * <li>51 Address 2 - Street</li>
+	 * <li>52 Address 2 - City</li>
+	 * <li>53 Address 2 - PO Box</li>
+	 * <li>54 Address 2 - Region</li>
+	 * <li>55 Address 2 - Postal Code</li>
+	 * <li>56 Address 2 - Country</li>
+	 * <li>57 Address 2 - Extended Address</li>
+	 * </ul>
+	 */
+	public GmailImportContacts() {
+		CommonLog.logger.info("heading//");
+
+		ArrayList<Person> mergedPersons = Data.getMergedPersons();
+		getPhonelist(mergedPersons);
+		createContactList(mergedPersons);
+	}
+
+	private void createContactList(ArrayList<Person> mergedPersons) {
+		for (int i = 0; i < mergedPersons.size(); i++) {
+			StringBuffer sb = new StringBuffer();
+			Person p = mergedPersons.get(i);
+			// Navn.
+			sb.append(p.getName() + ",,,,,,,,,,,,,,,,,");
+			// Billing information
+			sb.append(",,,,,,,,,");
+			// Notes
+			sb.append(p.getMemberNo() + " spiller ");
+			ArrayList<String> days = p.getPlayClubs();
+			for (int j = 0; j < days.size(); j++) {
+				if (j > 0) {
+					sb.append("og ");
+				}
+				sb.append(days.get(j) + " ");
+			}
+			sb.append(",,,,");
+			// Email
+			sb.append(p.getEmail() + ",,,,");
+			// Phone 1-3
+			ArrayList<String> phonelist = p.getGmailPhone();
+			for (int j = 0; j < phonelist.size(); j++) {
+				sb.append(phonelist.get(j) + ",,");
+			}
+			// Address
+			sb.append(p.getAddress_1() + p.getAddress_2() + ",,,,,,,,,");
+			sb.append(",,,,,,,,,");
+
+			p.setGmailImportContacts(sb.toString());
+
+			mergedPersons.set(i, p);
+		}
+	}
+
+	/**
+	 * This procedure create a phone list for each person to be used for import of
+	 * contacts in gmail.
+	 * 
+	 * @param mergedPersons
+	 *            Persons with information from all clubs.
+	 */
+	private void getPhonelist(ArrayList<Person> mergedPersons) {
+		for (int i = 0; i < mergedPersons.size(); i++) {
+			Person person = mergedPersons.get(i);
+			ArrayList<String> phonelist = person.getGmailPhone();
+			checkDuplicates(phonelist);
+		}
+	}
+
+	/**
+	 * This procedure deletes duplicate phone numbers.
+	 * 
+	 * @param phonelist
+	 *            Phone list of current person.
+	 */
+	private void checkDuplicates(ArrayList<String> phonelist) {
+		for (int phonelistNo = 0; phonelistNo < phonelist.size(); phonelistNo++) {
+			String phoneNumberToCompareWith = phonelist.get(phonelistNo);
+
+			deleteDuplicates(phonelist, phonelistNo, phoneNumberToCompareWith);
+			/*
+			 * Set empty phone numbers last.
+			 */
+			boolean goOn = true;
+			while (goOn) {
+				goOn = false;
+				for (int j = 0; j < phonelist.size() - 1; j++) {
+					// if not a phone number.
+					if (phonelist.get(j).length() < 11) {
+						phonelist.set(j, phonelist.get(j + 1));
+						phonelist.set(j + 1, "");
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * This procedure deletes duplicate phone numbers from phone list of current
+	 * person.
+	 * 
+	 * @param phonelist
+	 *            Phone list of current person.
+	 * @param phonelistNo
+	 *            Current number in phone list to examine.
+	 * @param phoneNumberToCompareWith
+	 *            Phone number to compare with other phone numbers in phone list of
+	 *            current person.
+	 */
+	private void deleteDuplicates(ArrayList<String> phonelist, int phonelistNo, String phoneNumberToCompareWith) {
+		/*
+		 * Delete duplicate phone numbers.
+		 */
+		for (int j = 0; j < phonelist.size(); j++) {
+			// Don't compare to itself.
+			if (phonelistNo != j) {
+				String secondPhoneNumber = phonelist.get(j);
+				if (phoneNumberToCompareWith.compareTo(secondPhoneNumber) == 0) {
+					// if duplicate phone number delete the second one.
+					phonelist.set(j, "");
+				}
+			}
+		}
+	}
+
+}

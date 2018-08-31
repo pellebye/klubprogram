@@ -3,6 +3,7 @@ package _start.kontingent;
 import java.util.ArrayList;
 import java.util.Hashtable;
 
+import _start.GmailContact.GmailImportContacts;
 import common.Data;
 import common.LocalMethods;
 import common.out.file.filetest.ModeCheckDetail;
@@ -87,6 +88,10 @@ public class PersonsSetup {
 		sortPersons();
 
 		mergePersonsWithClubsPlayed();
+
+		new GmailImportContacts();
+
+		int k = 8;
 	}
 
 	/**

@@ -1,9 +1,9 @@
               ==========================================================================================
-                                             - Sunday 2018.06.28 23:39 LogStart
+                                             - Sunday 2018.08.30 21:07 LogStart
               ==========================================================================================
 
 
-             Class constructor: _start.MemberList - Member list (loglevel = FINE)
+         Class constructor: _start.ProgramProcess - Klubprogram (loglevel = FINE)
 ---------------------------------------------------------------------------------
 
 
@@ -265,3 +265,2085 @@
 
                                       Class constructor: _start.kalender.PlayTime
 ---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                   Class constructor: _start.config.calendar.HandleCalendarPeriod
+---------------------------------------------------------------------------------
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+
+
+                                     Class constructor: _start.kalender.MinusWeek
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                   Class constructor: _start.config.calendar.HandleCalendarPeriod
+---------------------------------------------------------------------------------
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+
+
+                                     Class constructor: _start.kalender.MinusWeek
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                                  Class constructor: _start.kalender.WeekHandling
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.config.calendar.HandleCalendar
+---------------------------------------------------------------------------------
+
+
+                                      Class constructor: _start.kalender.PlayTime
+---------------------------------------------------------------------------------
+
+
+                             Class constructor: _start.config.CreatePlayTimeDates
+---------------------------------------------------------------------------------
+
+
+                                          Class constructor: _start.ConvertToUtf8
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\Klub2484_Mandag_eftermiddag.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Mandag_eftermiddag.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Mandag_eftermiddag.csv
+              FileTestInfo.createFile status = FILEEXISTS
+
+
+                        Class constructor: common.out.file.ReplaceAsciiAndISO8859
+---------------------------------------------------------------------------------
+
+
+                              Class constructor: common.out.print.PrintStringFile
+---------------------------------------------------------------------------------
+
+
+                                   Class constructor: common.out.SetupPrintwriter
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\Klub2484_Tirsdag_eftermiddag.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Tirsdag_eftermiddag.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Tirsdag_eftermiddag.csv
+              FileTestInfo.createFile status = FILEEXISTS
+
+
+                        Class constructor: common.out.file.ReplaceAsciiAndISO8859
+---------------------------------------------------------------------------------
+
+
+                              Class constructor: common.out.print.PrintStringFile
+---------------------------------------------------------------------------------
+
+
+                                   Class constructor: common.out.SetupPrintwriter
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\Klub2484_Onsdag_formiddag.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Onsdag_formiddag.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Onsdag_formiddag.csv
+              FileTestInfo.createFile status = FILEEXISTS
+
+
+                        Class constructor: common.out.file.ReplaceAsciiAndISO8859
+---------------------------------------------------------------------------------
+
+
+                              Class constructor: common.out.print.PrintStringFile
+---------------------------------------------------------------------------------
+
+
+                                   Class constructor: common.out.SetupPrintwriter
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\Klub2484_Onsdag_eftermiddag.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Onsdag_eftermiddag.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Onsdag_eftermiddag.csv
+              FileTestInfo.createFile status = FILEEXISTS
+
+
+                        Class constructor: common.out.file.ReplaceAsciiAndISO8859
+---------------------------------------------------------------------------------
+
+
+                              Class constructor: common.out.print.PrintStringFile
+---------------------------------------------------------------------------------
+
+
+                                   Class constructor: common.out.SetupPrintwriter
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\Klub2484_Onsdag_aften.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Onsdag_aften.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Onsdag_aften.csv
+              FileTestInfo.createFile status = FILEEXISTS
+
+
+                        Class constructor: common.out.file.ReplaceAsciiAndISO8859
+---------------------------------------------------------------------------------
+
+
+                              Class constructor: common.out.print.PrintStringFile
+---------------------------------------------------------------------------------
+
+
+                                   Class constructor: common.out.SetupPrintwriter
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\Klub2484_Onsdag_hold.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Onsdag_hold.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Onsdag_hold.csv
+              FileTestInfo.createFile status = FILEEXISTS
+
+
+                        Class constructor: common.out.file.ReplaceAsciiAndISO8859
+---------------------------------------------------------------------------------
+
+
+                              Class constructor: common.out.print.PrintStringFile
+---------------------------------------------------------------------------------
+
+
+                                   Class constructor: common.out.SetupPrintwriter
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\Klub2484_Torsdag_aften.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Torsdag_aften.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/Klub2484_Torsdag_aften.csv
+              FileTestInfo.createFile status = FILEEXISTS
+
+
+                        Class constructor: common.out.file.ReplaceAsciiAndISO8859
+---------------------------------------------------------------------------------
+
+
+                              Class constructor: common.out.print.PrintStringFile
+---------------------------------------------------------------------------------
+
+
+                                   Class constructor: common.out.SetupPrintwriter
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\ManE.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/ManE.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/ManE.csv
+              FileTestInfo.createFile status = FILEEXISTS
+
+
+                                     Class constructor: _start.kontingent.Heading
+---------------------------------------------------------------------------------
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\TirE.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/TirE.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/TirE.csv
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\OnsF.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/OnsF.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/OnsF.csv
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\OnsE.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/OnsE.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/OnsE.csv
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\OnsA.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/OnsA.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/OnsA.csv
+              FileTestInfo.createFile status = FILEEXISTS
+   625           common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\OnsH.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/OnsH.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/OnsH.csv
+              FileTestInfo.createFile status = FILEEXISTS
+                 common.out.file.filetest.Filetest - <init>
+              FileTestInfo pathAndFilenameWithoutUserDir = G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\bridgecentral\TorA.csv
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingentG:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/TorA.csv
+              FileTestInfo.createFile status = FILEDOESNOTEXIST
+              FileTestInfo.createFile.destinationPathAndFilename = G:/Programmering/_Eclipse/ws2018/kontingent/kontingent/bridgecentral/TorA.csv
+              FileTestInfo.createFile status = FILEEXISTS
+
+
+                                 Class constructor: _start.kontingent.PersonMerge
+---------------------------------------------------------------------------------
+
+
+                       Class constructor: _start.GmailContact.GmailImportContacts
+---------------------------------------------------------------------------------
+
+
+                               Class constructor: _start.kontingent.TotalPlayDays
+---------------------------------------------------------------------------------
+
+
+                         Class constructor: _start.kontingent.ContingentCalculate
+---------------------------------------------------------------------------------
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   650           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   675           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   700           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   725           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   750           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   775           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   800           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   825           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   850           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   875           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   900           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   925           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   950           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+   975           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+  1000           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+  1025           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+  1050           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+  1075           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+  1100           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+  1125           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+  1150           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+  1175           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+  1200           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+  1225           common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+                 common.LocalMethods - isParsableToInt
+
+
+                          Class constructor: _start.kontingent.ContingentPrintOut
+---------------------------------------------------------------------------------
+
+
+                          Class constructor: _start.kontingent.ContingentPrintOut
+---------------------------------------------------------------------------------
+
+
+                              Class constructor: common.out.print.PrintStringFile
+---------------------------------------------------------------------------------
+
+
+                                   Class constructor: common.out.SetupPrintwriter
+---------------------------------------------------------------------------------
+              ---> Exception - G:\Programmering\_Eclipse\ws2018\kontingent\kontingent\resultater\kontingentliste\kontingent.csv (Processen kan ikke få adgang til filen, da den bruges af en anden proces) - out = new PrintWriter - 1
+                       (-2) open0 - java.io.FileOutputStream
+                            open - java.io.FileOutputStream
+                            <init> - java.io.FileOutputStream
+                            <init> - java.io.FileOutputStream
+                            <init> - java.io.PrintWriter
+                            <init> - java.io.PrintWriter
+                       (40) <init> - common.out.SetupPrintwriter
+                       (29) <init> - common.out.print.PrintStringFile
+                       (34) <init> - _start.kontingent.ContingentPrintOut
+                       (80) <init> - _start.ProgramProcess
+                      (130) main - _start.ProgramProcess
+              ------------------------------ Exception end
+               

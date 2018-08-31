@@ -23,23 +23,24 @@ public class ShuffleList {
 			new InfoUnexpectedError("008 Shufflelist");
 			e.printStackTrace();
 		}
-		String[] splitString = randomList.split("-");
+		if (randomList.length() > 0) {
+			String[] splitString = randomList.split("-");
+			if (splitString.length == 2) {
+				CommonLog.logger.info("message//splitString[0] =" + splitString[0]);
+				CommonLog.logger.info("message//splitString[1] =" + splitString[1]);
 
-		if (splitString.length == 2) {
-			CommonLog.logger.info("message//splitString[0] =" + splitString[0]);
-			CommonLog.logger.info("message//splitString[1] =" + splitString[1]);
-
-			int from = Integer.parseInt(splitString[0]);
-			int to = Integer.parseInt(splitString[1]) + 1;
-			CommonLog.logger.info("message//randomList =" + randomList);
-			CommonLog.logger.info("message//from =" + from);
-			CommonLog.logger.info("message//to =" + to);
-			for (int i = from; i < to; i++) {
-				new PrintoutNewShuffleList(i);
-				CommonLog.logger.info("message//i =" + i);
-			}
-		} else
-			new InfoUnexpectedError("009 Shufflelist");
+				int from = Integer.parseInt(splitString[0]);
+				int to = Integer.parseInt(splitString[1]) + 1;
+				CommonLog.logger.info("message//randomList =" + randomList);
+				CommonLog.logger.info("message//from =" + from);
+				CommonLog.logger.info("message//to =" + to);
+				for (int i = from; i < to; i++) {
+					new PrintoutNewShuffleList(i);
+					CommonLog.logger.info("message//i =" + i);
+				}
+			} else
+				new InfoUnexpectedError("009 Shufflelist");
+		}
 
 	}
 }

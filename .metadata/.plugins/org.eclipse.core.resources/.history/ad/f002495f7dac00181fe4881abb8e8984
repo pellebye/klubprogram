@@ -1,0 +1,41 @@
+package _start.GmailContact;
+
+import java.util.ArrayList;
+import java.util.Hashtable;
+
+import _start.kontingent.Person;
+import common.Data;
+import common.log.CommonLog;
+import common.out.print.PrintStringFile;
+
+public class GmailContactPrintout {
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	public GmailContactPrintout() {
+		CommonLog.logger.info("heading//");
+
+		ArrayList<Person> persons = Data.getMergedPersons();
+		Hashtable<Integer, String> aliasses = Data.getAliasser();
+
+		for (int i = 0; i < aliasses.size(); i++) {
+			ArrayList<String> aliasContacts = new ArrayList<>();
+			String alias = aliasses.get(i);
+			for (int j = 0; j < persons.size(); j++) {
+				Person p = persons.get(j);
+				ArrayList<String> clubs = p.getPlayClubs();
+				for (int k = 0; k < clubs.size(); k++) {
+					String club = clubs.get(k);
+					if (alias.compareTo(club) == 0) {
+						aliasContacts.add(p.getGmailImportContacts());
+						break;
+					}
+				}
+			}
+			new PrintStringFile(aliasContacts.toArray(new String[0]), "resultater", alias + "contactImport.csv");
+		}
+
+
+	}
+}

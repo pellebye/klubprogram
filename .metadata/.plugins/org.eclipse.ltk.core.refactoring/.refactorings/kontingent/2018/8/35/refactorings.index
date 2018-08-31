@@ -1,0 +1,9 @@
+1535637914571	Extract method 'getPhonelist'
+1535643592507	Rename type 'GmailContact'
+1535702742730	Delete element
+1535724327570	Rename local variable 'i'
+1535724420363	Rename local variable 'phoneNumber1'
+1535724453818	Extract method 'deleteDuplicates'
+1535724808120	Rename local variable 'phoneNumber2'
+1535725036346	Extract method 'setEmptyPhoneNumbersLast'
+1535725228809	Rename method 'checkDuplicates'

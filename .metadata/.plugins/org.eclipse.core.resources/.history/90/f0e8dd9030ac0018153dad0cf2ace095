@@ -1,0 +1,198 @@
+package _start.kontingent;
+
+import java.util.ArrayList;
+import java.util.Hashtable;
+
+import common.Data;
+import common.LocalMethods;
+import common.out.file.filetest.ModeCheckDetail;
+import common.out.file.filetest.ModeChecks;
+import common.out.file.filetest.TypeOfTest;
+import common.out.file.filetest.mac.MessagesAndChecks;
+import common.out.print.ModeTextLines;
+import common.out.print.ReadTxtFile;
+import common.out.print.Textlines;
+
+public class PersonsSetup {
+
+	/**
+	 * Persons from club files. I.e. several lines with same person member number.
+	 * 
+	 */
+	private ArrayList<Person> personsInClubLines = new ArrayList<>();
+
+	/**
+	 * Persons merged with club days.
+	 */
+	private ArrayList<Person> mergedPersons = new ArrayList<>();
+
+	/**
+	 * Returns an array list of persons merged with club days.
+	 */
+	public ArrayList<Person> getMergedPersons() {
+		return mergedPersons;
+	}
+
+	private int clubCount = 0;
+
+	private Hashtable<Integer, String> clubNames = null;
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	/**
+	 * This class merge persons with clubs where they are playing.
+	 */
+	public PersonsSetup() {
+
+		// clubNames = Data.getOriginals();
+		clubNames = Data.getAliasser();
+		Heading heading = null;
+
+		/*
+		 * Go through csv files.
+		 */
+		for (clubCount = 0; clubCount < clubNames.size(); clubCount++) {
+			String filename = clubNames.get(clubCount);
+			Textlines textlines = new Textlines();
+			String path = LocalMethods.getUserDirectory() + "\\bridgecentral\\" + filename + ".csv";
+			ArrayList<String> clubLines = readOneKlubLines(textlines, path);
+
+			if (clubLines.size() == 0) {
+				new MessagesAndChecks(null, ModeChecks.CLUBLINES_EMPTY, null);
+			}
+			/*
+			 * Go through lines in current file.
+			 */
+			for (int clubLineNo = 0; clubLineNo < clubLines.size(); clubLineNo++) {
+				String oneClubLine = clubLines.get(clubLineNo);
+				/*
+				 * If first line in first club file create a headline.
+				 */
+				if (clubCount == 0 && clubLineNo == 0) {
+					heading = new Heading(oneClubLine, clubCount, clubLineNo);
+				}
+
+				/*
+				 * Ignore first line in every club file (which are headings).
+				 */
+				if (clubLineNo > 0) {
+					personsInClubLines.add(new Person(oneClubLine, clubNames.get(clubCount), clubCount));
+				}
+			}
+		}
+
+		finishHeadings(heading);
+
+		sortPersons();
+
+		mergePersonsWithClubsPlayed();
+
+		gmailContactImport();
+
+		int k = 8;
+	}
+
+	private void gmailContactImport() {
+		for (int i = 0; i < mergedPersons.size(); i++) {
+			Person person = mergedPersons.get(i);
+			ArrayList<String> phonelist = person.getGmailPhone();
+			for (int j = 0; j < phonelist.size(); j++) {
+				System.out.print(phonelist.get(j));
+
+			}
+			checkDuplicates(phonelist);
+			System.out.println("");
+		}
+	}
+
+	private void checkDuplicates(ArrayList<String> phonelist) {
+		for (int i = 0; i < phonelist.size(); i++) {
+			String phoneNumber1 = phonelist.get(i);
+			for (int j = 0; j < phonelist.size(); j++) {
+				if (i!=j) {
+				String phoneNumber2 = phonelist.get(j);
+					if (phoneNumber1.compareTo(phoneNumber2)==0) {
+						
+					}
+				}
+			}
+		}
+	}
+
+	/**
+	 * Merges persons (with same member number) created from club files to one
+	 * person which have information from the club files where that person are
+	 * playing.
+	 */
+	private void mergePersonsWithClubsPlayed() {
+		PersonMerge personMerge = new PersonMerge(personsInClubLines);
+		mergedPersons = personMerge.getMergedPersons();
+		personMerge = null;
+		Data.setMergedPersons(mergedPersons);
+	}
+
+	/**
+	 * Adds club aliases, total playing days, and contingent to headings.
+	 * 
+	 * @param heading
+	 *            Headings from first line in first club file.
+	 */
+	private void finishHeadings(Heading heading) {
+		heading.addClubNameAliasesToHeading();
+		Data.setHeadings(heading.getHeadings());
+		heading = null;
+	}
+
+	/**
+	 * Sort all gathered lines (multiple lines for each person) alphabetical in
+	 * respect to names.
+	 */
+	private void sortPersons() {
+		personsInClubLines.trimToSize();
+		boolean goOn = true;
+		while (goOn) {
+			goOn = false;
+			for (int i = 1; i < personsInClubLines.size(); i++) {
+				Person object_0 = personsInClubLines.get(i - 1);
+				Person object_1 = personsInClubLines.get(i);
+				String name_0 = getName(object_0);
+				String name_1 = getName(object_1);
+
+				if (name_0.compareTo(name_1) > 0) {
+					personsInClubLines.set(i - 1, object_1);
+					personsInClubLines.set(i, object_0);
+					goOn = true;
+				}
+			}
+		}
+	}
+
+	/**
+	 * Returns name of current person from modified line.
+	 * 
+	 * @param p
+	 *            Current person.
+	 */
+	private String getName(Person p) {
+		String modifiedLine = p.getModifiedLine();
+		String[] splitString = modifiedLine.split(";");
+
+		return splitString[2];
+	}
+
+	/**
+	 * Returns lines from one club.
+	 * 
+	 * @param textlines
+	 *            An array list of strings.
+	 * @param path
+	 *            Absolute path of current club file.
+	 */
+	private ArrayList<String> readOneKlubLines(Textlines textlines, String path) {
+		new ReadTxtFile(path, ModeTextLines.ALLLINES, textlines, TypeOfTest.FILE_NOCOPY, ModeCheckDetail.PATHACTUAL);
+		ArrayList<String> lines = textlines.getLines();
+
+		return lines;
+	}
+}

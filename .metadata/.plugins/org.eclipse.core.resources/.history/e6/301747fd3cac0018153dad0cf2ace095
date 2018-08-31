@@ -1,0 +1,14 @@
+package _start.GmailContact;
+
+import common.log.CommonLog;
+
+public class GmailContact {
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	public GmailContact(){
+      CommonLog.logger.info("heading//");
+
+   }
+}

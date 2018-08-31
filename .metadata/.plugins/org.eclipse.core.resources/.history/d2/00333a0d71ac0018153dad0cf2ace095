@@ -1,0 +1,31 @@
+package _start.GmailContact;
+
+import java.util.ArrayList;
+import java.util.Hashtable;
+
+import _start.kontingent.Person;
+import common.Data;
+import common.log.CommonLog;
+import common.out.print.PrintStringFile;
+
+public class GmailContactPrintout {
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	public GmailContactPrintout() {
+		CommonLog.logger.info("heading//");
+
+		ArrayList<Person> persons = Data.getMergedPersons();
+		Hashtable<Integer, String> aliasses = Data.getAliasser();
+		
+		for (int i = 0; i < aliasses.size(); i++) {
+			for (int j = 0; j < array.length; j++) {
+				
+			}
+		}
+
+		new PrintStringFile(result.toArray(new String[0]), "resultater/telefonliste", "tlf-list.htm");
+
+	}
+}

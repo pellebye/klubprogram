@@ -8,7 +8,7 @@ import common.out.file.filetest.ModeCheckDetail;
 import common.out.file.filetest.ModeChecks;
 import common.out.file.filetest.TypeOfTest;
 import common.out.file.filetest.mac.MessagesAndChecks;
-import common.out.info.InfoFirstTimeProgramStart;
+import common.widgets.ShellAbout;
 
 public class ChkJquery {
 
@@ -17,6 +17,10 @@ public class ChkJquery {
 	// ---------------------------------------------------------------------------------------------
 	// CONSTRUCTOR
 	// ---------------------------------------------------------------------------------------------
+	/**
+	 * It is decided that if 'tablesorter.js' in system folder does not exist then
+	 * the program has been started for the first time.
+	 */
 	public ChkJquery() {
 		CommonLog.logger.info("heading//");
 
@@ -49,7 +53,8 @@ public class ChkJquery {
 			 * Check for first time program start.
 			 */
 			if (fileNo == 1 && filetest.getStatus().compareTo(Status.FILEDOESNOTEXIST) == 0) {
-				new InfoFirstTimeProgramStart();
+				// new InfoFirstTimeProgramStart();
+				new ShellAbout(false);
 				Data.setFirstTimeStart(true);
 			}
 

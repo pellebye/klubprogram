@@ -1,0 +1,412 @@
+package _start.kontingent;
+
+import java.util.ArrayList;
+import java.util.Hashtable;
+
+import common.Data;
+
+public class Person {
+
+	/**
+	 * Line modified from original (contingent) line designed to be part of a phone
+	 * list.
+	 */
+	private String modifiedLine = "";
+
+	/**
+	 * Returns the modified line (of current person) which is designed to be part of
+	 * a phone list.
+	 */
+	public String getModifiedLine() {
+		return modifiedLine;
+	}
+
+	/**
+	 * Club name of current club file.
+	 */
+	private String clubName = "";
+
+	/**
+	 * Returns club name for current person
+	 */
+	public String getClubName() {
+		return clubName;
+	}
+
+	/**
+	 * Alias for club name of current person which for the most part is shorter than
+	 * the original club name.
+	 */
+	private String aliasClubname = "";
+
+	/**
+	 * Returns an alias for club name of current person which for the most part is
+	 * shorter than the original club name.
+	 */
+	public String getAliasClubname() {
+		return aliasClubname;
+	}
+
+	/**
+	 * A collection of club names (aliases) current person is playing in.
+	 */
+	private ArrayList<String> playClubs = new ArrayList<>();
+
+	/**
+	 * Add a club alias to the collection of club names (aliases) current person is
+	 * playing in.
+	 * 
+	 * @param playClub
+	 *            Club alias to be added to the collection of club names (aliases)
+	 *            current person is playing in.
+	 */
+	public void addOnePlayClub(String playClub) {
+		playClubs.add(playClub);
+	}
+
+	/**
+	 * Returns the collection of club names (aliases) current person is playing in.
+	 */
+	public ArrayList<String> getPlayClubs() {
+		playClubs.trimToSize();
+		return playClubs;
+	}
+
+	/**
+	 * A collection of days per month current person is playing.
+	 */
+	private ArrayList<Integer> playDays = new ArrayList<>();
+
+	/**
+	 * Add club days to the collection of club days current person is playing per
+	 * month.
+	 * 
+	 * @param clubDays
+	 *            Number of days per month current person is playing in a specific
+	 *            club.
+	 */
+	public void addOnePlayDate(Integer clubDays) {
+		playDays.add(clubDays);
+	}
+
+	/**
+	 * Returns an array list of number of days current person plays per month in
+	 * each club.
+	 */
+	public ArrayList<Integer> getPlayDays() {
+		playDays.trimToSize();
+		return playDays;
+	}
+
+	/**
+	 * Club status can be 'prim�r', 'klub', and 'kursus'.
+	 */
+	private String clubStatus = "none";
+
+	/**
+	 * Returns club status which can be 'prim�r', 'klub', and 'kursus'.
+	 */
+	public String getClubStatus() {
+		return clubStatus;
+	}
+
+	/**
+	 * Member number of current person.
+	 */
+	private int medlemsNr = -1;
+
+	/**
+	 * Returns member number of current person.
+	 */
+	public int getMemberNo() {
+		return medlemsNr;
+	}
+
+	private String address_1 = "";
+
+	public String getAddress_1() {
+		return address_1;
+	}
+
+	private String address_2 = "";
+
+	public String getAddress_2() {
+		return address_2;
+	}
+
+	/**
+	 * Calculated contingent for current person.
+	 */
+	private int contigent = -1;
+
+	/**
+	 * Returns contingent for current person.
+	 */
+	public int getContingent() {
+		return contigent;
+	}
+
+	/**
+	 * Sets contingent for current person.
+	 * 
+	 * @param contigent
+	 *            Contingent for current person.
+	 */
+	public void setContigent(int contigent) {
+		this.contigent = contigent;
+	}
+
+	/**
+	 * Total number of days current person is playing in all clubs.
+	 */
+	private int numberOfPlayingDays = -1;
+
+	public void setNumberOfPlayingDays(int numberOfPlayingDays) {
+		this.numberOfPlayingDays = numberOfPlayingDays;
+	}
+
+	/**
+	 * Returns the total number of days current person is playing in all clubs.
+	 */
+	public int getNumberOfPlayingDays() {
+		return numberOfPlayingDays;
+	}
+
+	/**
+	 * Mail domain of current person.
+	 */
+	private String mailDomain = "";
+
+	/**
+	 * Returns mail domain of current person.
+	 * 
+	 * @return
+	 */
+	public String getMailDomain() {
+		return mailDomain;
+	}
+
+	private ArrayList<String> gmailPhone = new ArrayList<>();
+
+	public ArrayList<String> getGmailPhone() {
+		return gmailPhone;
+	}
+
+	private String name = "";
+
+	public String getName() {
+		return name;
+	}
+
+	private String email = "";
+
+	public String getEmail() {
+		return email;
+	}
+
+	private String gmailImportContacts = "";
+
+	public String getGmailImportContacts() {
+		return gmailImportContacts;
+	}
+
+	public void setGmailImportContacts(String gmailImportContacts) {
+		this.gmailImportContacts = gmailImportContacts;
+	}
+
+	// ---------------------------------------------------------------------------------------------
+	// CONSTRUCTOR
+	// ---------------------------------------------------------------------------------------------
+	/**
+	 * This class creates a person containing
+	 * <ul>
+	 * <li>club name</li>
+	 * <li>values in a csv-line.</li>
+	 * <li>club number</li>
+	 * </ul>
+	 * 
+	 * @param line
+	 *            Current line from current club file.
+	 * @param clubName
+	 *            Club name of current file
+	 * @param filesCount
+	 *            Current number of current club file.
+	 */
+	public Person(String line, String clubName, int filesCount) {
+		/*
+		 * Add number of days per month for current person for current club name.
+		 */
+		playDays.add(calculateClubnames(clubName));
+		/*
+		 * split current csv line into elements related to current person
+		 */
+		String[] originalLine = line.split(";");
+		for (int splitNo = 0; splitNo < originalLine.length; splitNo++) {
+			switch (splitNo) {
+			case 0:
+				clubStatus = originalLine[0];
+				modifiedLine += originalLine[splitNo] + ";";
+				break;
+			case 1:
+				// Member number.
+				medlemsNr = Integer.parseInt(originalLine[1]);
+				modifiedLine += originalLine[splitNo] + ";";
+				break;
+			case 2:
+				name = originalLine[splitNo];
+				modifiedLine += originalLine[splitNo] + ";";
+				break;
+			case 3:
+				//
+				address_1 = originalLine[splitNo];
+				modifiedLine += originalLine[splitNo] + ";";
+				break;
+			case 4:
+				handleAddressLines(originalLine, splitNo);
+				break;
+			case 5:
+				// Do nothing for "Landekode"
+				break;
+			case 6:
+				address_1 += " - " + originalLine[splitNo];
+				modifiedLine += originalLine[splitNo] + ";";
+				break;
+			case 7:
+				address_1 += " " + originalLine[splitNo];
+				modifiedLine += originalLine[splitNo] + ";";
+				break;
+			case 8:
+				handlePhoneNumbers(originalLine, splitNo);
+				break;
+			case 9:
+			case 10:
+				// Tlf 2 and 3 is handled in case 8
+				break;
+			case 11:
+				email = originalLine[splitNo];
+				modifiedLine += originalLine[splitNo] + ";";
+				break;
+			case 12:
+				// F�dselsdag.
+			case 13:
+				// Betalt �r til dato.
+			case 14:
+				// Adgang til personlig hjemmeside.
+				break;
+			default:
+				modifiedLine += originalLine[splitNo] + ";";
+				break;
+			}
+
+			checkForMailDomain(originalLine, splitNo);
+		}
+	}
+
+	/**
+	 * Create phone numbers in the first two columns of modified line where phone
+	 * numbers arbitrary can be positioned in two of three columns.
+	 * 
+	 * @param originalLine
+	 *            Current line from current club file split up as a string array.
+	 * @param splitNo
+	 *            Index of original line.
+	 */
+	private void handlePhoneNumbers(String[] originalLine, int splitNo) {
+
+		int count = splitNo - 1;
+		for (int j = splitNo; j < splitNo + 3; j++) {
+			gmailPhone.add(originalLine[j]);
+			if (checkTlfNo(originalLine[j])) {
+				// Telephone exists in this position.
+				if (j > splitNo) {
+					count++;
+					originalLine[count] = originalLine[j];
+					if (count != j) {
+						/*
+						 * Do nothing. Phone number in third column will be moved to second column.
+						 */
+					}
+					if (j == splitNo + 2 && count == splitNo + 1) {
+						originalLine[splitNo + 2] = "";
+						break;
+					}
+				} else {
+					/*
+					 * Do nothing for the first telephone number.
+					 */
+					count++;
+				}
+			}
+		}
+		// Add two columns of phone numbers to modified line.
+		modifiedLine += originalLine[splitNo] + ";" + originalLine[splitNo + 1] + ";";
+	}
+
+	/**
+	 * If any address in second address column merge address 1 + 2 and add modified
+	 * line.
+	 * 
+	 * @param originalLine
+	 *            Current line from current club file split up as a string array.
+	 * @param splitNo
+	 *            Index of original line.
+	 */
+	private void handleAddressLines(String[] originalLine, int splitNo) {
+		address_2 = originalLine[splitNo];
+		/*
+		 */
+		if (address_2.length() > 0) {
+			modifiedLine = modifiedLine.substring(0, modifiedLine.length() - 1);
+			modifiedLine += ", " + originalLine[splitNo] + ";";
+		}
+	}
+
+	/**
+	 * If any mail address add mail domain to mail column of modified line.
+	 * 
+	 * @param originalLine
+	 *            Current line from current club file split up as a string array.
+	 * @param splitNo
+	 *            Index of original line.
+	 */
+	private void checkForMailDomain(String[] originalLine, int splitNo) {
+		if (originalLine[splitNo].contains("@")) {
+			String[] split = originalLine[splitNo].split("@");
+			mailDomain = split[1];
+		}
+	}
+
+	/**
+	 * Returns true if any phone number.
+	 * 
+	 * @param phoneNumber
+	 *            String possibly containing a phone number.
+	 */
+	private boolean checkTlfNo(String phoneNumber) {
+		if (phoneNumber.length() > 0)
+			return true;
+		else
+			return false;
+	}
+
+	/**
+	 * Add current club played of current person. This procedure is a work around
+	 * after club names and aliasses became the same.
+	 * 
+	 * @param clubName
+	 *            Current club name.
+	 */
+	private int calculateClubnames(String clubName) {
+		this.clubName = clubName;
+		// String[] clubnames = Data.getAliasser();
+		Hashtable<Integer, String> aliases = Data.getAliasser();
+		for (int i = 0; i < aliases.size(); i++) {
+			if (clubName.compareTo(aliases.get(i)) == 0) {
+				aliasClubname = aliases.get(i);
+				playClubs.add(aliasClubname);
+				return Integer.parseInt(Data.getDaysPerMonth()[i]);
+			}
+		}
+		return -1;
+	}
+}

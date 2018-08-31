@@ -27,7 +27,7 @@ public class ChkResultFolder {
 	public ChkResultFolder() {
 		CommonLog.logger.info("heading//");
 
-		for (int fileNo = 0; fileNo < 5; fileNo++) {
+		for (int fileNo = 0; fileNo < 6; fileNo++) {
 			switch (fileNo) {
 			case 0:
 				// system folder
@@ -69,6 +69,14 @@ public class ChkResultFolder {
 				filetest.setModeCheckDetail(ModeCheckDetail.EXAMPLES);
 				filetest.setSystemExit(true);
 				filetest.setType(TypeOfTest.FILE_MAKECOPY);
+				break;
+			case 5:
+				// gmail import folder
+				filetest = new Filetest("/resultater/gmail import");
+				filetest.setModeChecks(ModeChecks.FOLDEREXISTS);
+				filetest.setModeCheckDetail(ModeCheckDetail.SYSTEM);
+				filetest.setSystemExit(true);
+				filetest.setType(TypeOfTest.FILE_FOLDER);
 				break;
 
 			default:

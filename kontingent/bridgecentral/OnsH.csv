@@ -1,11 +1,12 @@
 Kontingentstatus;Medlemsnummer;Navn;Addresse 1;Addresse 2;Landekode;PostKode;By;Telefon 1;Telefon 2;Telefon 3;Email;Fødselsdag;Betalt år til Dato;Adgang til personlig hjemmeside;
+Primær;48835;Andreas Jørgensen;Østersøvej 6;Sdr Egebølle;DK;4983;Dannemare;54 94 33 67;;40 34 79 22;and.sus@live.dk;14-08-1951;;Nej
 Primær;61332;Birgit Ravnholdt;Marius Nielsens Allé 21;;DK;4900;Nakskov;54 92 32 79;;40 32 51 67;birgitravnholt@youmail.dk;21-03-1934;;Nej
 Primær;39262;Christian Bredal Nielsen;Svingelsvej 38;;DK;4900;Nakskov;54 92 25 33;;30 32 40 89;bredal@c.dk;22-01-1946;;Nej
 Primær;24245;Ellen Bredal Nielsen;Svingelsvej 38;;DK;4900;Nakskov;54 92 25 33;;;bredal@c.dk;28-02-1947;;Nej
 Primær;18602;Hanne Kolbye;Nybrogade 7 D, 3.;;DK;4900;Nakskov;54 92 30 04;;20 42 54 66;kolbye@youmail.dk;30-12-1899;;Nej
-(Ingen);18304;Inger Marie Wibholm;Søndre Boulevard 12;;DK;4930;Maribo;54 78 09 02;;21 62 20 88;iwibholm@gmail.com;16-01-1942;;Nej
+Klub;18304;Inger Marie Wibholm;Søndre Boulevard 12;;DK;4930;Maribo;54 78 09 02;;21 62 20 88;iwibholm@gmail.com;16-01-1942;;Nej
 Primær;61330;Ivar Karup Rasmussen;Jydevænget 11;;DK;4900;Nakskov;54 92 71 90;;24 46 31 85;ivar.rasmussen@c.dk;30-12-1899;;Nej
-Primær;16112;Janne Bøgh;Bønnekevej 14;;DK;4953;Vesterborg;54 92 85 88;;30 74 91 92;janne.bogh@gmail.com;30-12-1899;;Nej
+Primær;16112;Janne Bøgh;Bønnekevej 14;;DK;4953;Vesterborg;54 92 85 88;;30 74 91 92;janne.bogh@gmail.com;;;Nej
 Primær;14393;Jesper Seidelin Bøgh;Bønnekevej 14;;DK;4953;Vesterborg;29 87 96 97;29 87 96 97;29 87 96 97;jsbogh@gmail.com;30-12-1899;;Nej
 Primær;34875;Jette Hansen;Rudbjergvej 9;;DK;4983;Dannemare;54 94 45 25;;;tornevitzhave@post.tele.dk;30-12-1899;;Nej
 Primær;48838;Jette Keldebæk;Violvej 18;;DK;4900;Nakskov;54 92 18 95;;;keldebaek@youmail.dk;;;Nej
@@ -14,7 +15,6 @@ Primær;33635;Karin Fallesen;Jydevænget 8;;DK;4900;Nakskov;54 92 84 94;;20 34 4
 Primær;18603;Karl Aage Due;Louisevænget 20;;DK;4900;Nakskov;54 93 91 37;;;;30-12-1899;;Nej
 Primær;75560;Kirsten Holst;Vindøvej 46;;DK;4912;Harpelunde;54 93 23 10;;;kirsten@stampe-holst.dk;30-12-1899;;Nej
 Primær;21027;Knud Dideriksen;Tornskadevej 9;;DK;4900;Nakskov;54 92 25 51;;;kb.dideriksen@gmail.com;30-12-1899;;Nej
-Primær;40921;Kurt Simonsen;Vestmosevej 15;;DK;4900;Nakskov;54 92 60 40;;23 23 50 40;ksi@pc.dk;14-01-1949;;Nej
 Primær;61331;Lise Haugaard Jensen;Teglmarken 10;;DK;4900;Nakskov;54 95 82 97;;22 37 55 10;lise.haugaard@gmail.com;14-11-1937;;Nej
 Klub;79577;Lizzi Rzempala;Magasinvej 15 A;;DK;4960;Holeby;54 60 65 57;;;;30-04-1938;;Nej
 Primær;27574;Lone Harsig;Syrenvej 5;;DK;4900;Nakskov;54 92 62 88;;40 50 22 64;loneharsig@gmail.com;01-10-1942;;Nej

@@ -2,32 +2,40 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="00" key="selection"/>
+		<item value="email" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="email"/>
+			<item value=";"/>
+			<item value="gmailPhone"/>
+			<item value="methodShowMessage"/>
+			<item value="ComMethods"/>
+			<item value="CreateLabels"/>
+			<item value="CommonLog"/>
+			<item value="BridgeBuddy"/>
+			<item value="Methods"/>
+			<item value="bb.common.Com"/>
 			<item value="00"/>
 			<item value="playTimeCollection"/>
 			<item value="PlayTime"/>
 			<item value="this"/>
 			<item value="playTime"/>
-			<item value="skipEverySecond"/>
-			<item value="numberContingentErrors"/>
-			<item value="minusWeek"/>
-			<item value="minusWeekList"/>
-			<item value="randomList"/>
-			<item value="weekList"/>
 		</list>
 		<list key="replacehistory">
+			<item value=","/>
+			<item value="LocalMethods"/>
+			<item value="CommonLog"/>
+			<item value="common."/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
 		<item value="336" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="454" key="DIALOG_HEIGHT"/>
-		<item value="1357" key="DIALOG_X_ORIGIN"/>
+		<item value="1363" key="DIALOG_X_ORIGIN"/>
 		<item value="245" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

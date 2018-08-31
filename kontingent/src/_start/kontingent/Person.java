@@ -8,14 +8,14 @@ import common.Data;
 public class Person {
 
 	/**
-	 * Line modified from original (contingent) line designed to be part of a
-	 * phone list.
+	 * Line modified from original (contingent) line designed to be part of a phone
+	 * list.
 	 */
 	private String modifiedLine = "";
 
 	/**
-	 * Returns the modified line (of current person) which is designed to be
-	 * part of a phone list.
+	 * Returns the modified line (of current person) which is designed to be part of
+	 * a phone list.
 	 */
 	public String getModifiedLine() {
 		return modifiedLine;
@@ -34,14 +34,14 @@ public class Person {
 	}
 
 	/**
-	 * Alias for club name of current person which for the most part is shorter
-	 * than the original club name.
+	 * Alias for club name of current person which for the most part is shorter than
+	 * the original club name.
 	 */
 	private String aliasClubname = "";
 
 	/**
-	 * Returns an alias for club name of current person which for the most part
-	 * is shorter than the original club name.
+	 * Returns an alias for club name of current person which for the most part is
+	 * shorter than the original club name.
 	 */
 	public String getAliasClubname() {
 		return aliasClubname;
@@ -53,20 +53,19 @@ public class Person {
 	private ArrayList<String> playClubs = new ArrayList<>();
 
 	/**
-	 * Add a club alias to the collection of club names (aliases) current person
-	 * is playing in.
+	 * Add a club alias to the collection of club names (aliases) current person is
+	 * playing in.
 	 * 
 	 * @param playClub
-	 *            Club alias to be added to the collection of club names
-	 *            (aliases) current person is playing in.
+	 *            Club alias to be added to the collection of club names (aliases)
+	 *            current person is playing in.
 	 */
 	public void addOnePlayClub(String playClub) {
 		playClubs.add(playClub);
 	}
 
 	/**
-	 * Returns the collection of club names (aliases) current person is playing
-	 * in.
+	 * Returns the collection of club names (aliases) current person is playing in.
 	 */
 	public ArrayList<String> getPlayClubs() {
 		playClubs.trimToSize();
@@ -79,12 +78,12 @@ public class Person {
 	private ArrayList<Integer> playDays = new ArrayList<>();
 
 	/**
-	 * Add club days to the collection of club days current person is playing
-	 * per month.
+	 * Add club days to the collection of club days current person is playing per
+	 * month.
 	 * 
 	 * @param clubDays
-	 *            Number of days per month current person is playing in a
-	 *            specific club.
+	 *            Number of days per month current person is playing in a specific
+	 *            club.
 	 */
 	public void addOnePlayDate(Integer clubDays) {
 		playDays.add(clubDays);
@@ -187,6 +186,34 @@ public class Person {
 		return mailDomain;
 	}
 
+	private ArrayList<String> gmailPhone = new ArrayList<>();
+
+	public ArrayList<String> getGmailPhone() {
+		return gmailPhone;
+	}
+
+	private String name = "";
+
+	public String getName() {
+		return name;
+	}
+
+	private String email = "";
+
+	public String getEmail() {
+		return email;
+	}
+
+	private String gmailImportContacts = "";
+
+	public String getGmailImportContacts() {
+		return gmailImportContacts;
+	}
+
+	public void setGmailImportContacts(String gmailImportContacts) {
+		this.gmailImportContacts = gmailImportContacts;
+	}
+
 	// ---------------------------------------------------------------------------------------------
 	// CONSTRUCTOR
 	// ---------------------------------------------------------------------------------------------
@@ -207,8 +234,7 @@ public class Person {
 	 */
 	public Person(String line, String clubName, int filesCount) {
 		/*
-		 * Add number of days per month for current person for current club
-		 * name.
+		 * Add number of days per month for current person for current club name.
 		 */
 		playDays.add(calculateClubnames(clubName));
 		/*
@@ -226,6 +252,10 @@ public class Person {
 				medlemsNr = Integer.parseInt(originalLine[1]);
 				modifiedLine += originalLine[splitNo] + ";";
 				break;
+			case 2:
+				name = originalLine[splitNo];
+				modifiedLine += originalLine[splitNo] + ";";
+				break;
 			case 3:
 				//
 				address_1 = originalLine[splitNo];
@@ -237,12 +267,24 @@ public class Person {
 			case 5:
 				// Do nothing for "Landekode"
 				break;
+			case 6:
+				address_1 += " - " + originalLine[splitNo];
+				modifiedLine += originalLine[splitNo] + ";";
+				break;
+			case 7:
+				address_1 += " " + originalLine[splitNo];
+				modifiedLine += originalLine[splitNo] + ";";
+				break;
 			case 8:
 				handlePhoneNumbers(originalLine, splitNo);
 				break;
 			case 9:
 			case 10:
 				// Tlf 2 and 3 is handled in case 8
+				break;
+			case 11:
+				email = originalLine[splitNo];
+				modifiedLine += originalLine[splitNo] + ";";
 				break;
 			case 12:
 				// F�dselsdag.
@@ -261,12 +303,11 @@ public class Person {
 	}
 
 	/**
-	 * Create phone numbers in the first two columns of modified line where
-	 * phone numbers arbitrary can be positioned in two of three columns.
+	 * Create phone numbers in the first two columns of modified line where phone
+	 * numbers arbitrary can be positioned in two of three columns.
 	 * 
 	 * @param originalLine
-	 *            Current line from current club file split up as a string
-	 *            array.
+	 *            Current line from current club file split up as a string array.
 	 * @param splitNo
 	 *            Index of original line.
 	 */
@@ -274,6 +315,7 @@ public class Person {
 
 		int count = splitNo - 1;
 		for (int j = splitNo; j < splitNo + 3; j++) {
+			gmailPhone.add(originalLine[j]);
 			if (checkTlfNo(originalLine[j])) {
 				// Telephone exists in this position.
 				if (j > splitNo) {
@@ -281,8 +323,7 @@ public class Person {
 					originalLine[count] = originalLine[j];
 					if (count != j) {
 						/*
-						 * Do nothing. Phone number in third column will be
-						 * moved to second column.
+						 * Do nothing. Phone number in third column will be moved to second column.
 						 */
 					}
 					if (j == splitNo + 2 && count == splitNo + 1) {
@@ -302,17 +343,16 @@ public class Person {
 	}
 
 	/**
-	 * If any address in second address column merge address 1 + 2 and add
-	 * modified line.
+	 * If any address in second address column merge address 1 + 2 and add modified
+	 * line.
 	 * 
 	 * @param originalLine
-	 *            Current line from current club file split up as a string
-	 *            array.
+	 *            Current line from current club file split up as a string array.
 	 * @param splitNo
 	 *            Index of original line.
 	 */
 	private void handleAddressLines(String[] originalLine, int splitNo) {
-		address_2 = originalLine[splitNo];
+		address_1 += " - " + originalLine[splitNo];
 		/*
 		 */
 		if (address_2.length() > 0) {
@@ -325,8 +365,7 @@ public class Person {
 	 * If any mail address add mail domain to mail column of modified line.
 	 * 
 	 * @param originalLine
-	 *            Current line from current club file split up as a string
-	 *            array.
+	 *            Current line from current club file split up as a string array.
 	 * @param splitNo
 	 *            Index of original line.
 	 */
@@ -351,8 +390,8 @@ public class Person {
 	}
 
 	/**
-	 * Add current club played of current person. This procedure is a work
-	 * around after club names and aliasses became the same.
+	 * Add current club played of current person. This procedure is a work around
+	 * after club names and aliasses became the same.
 	 * 
 	 * @param clubName
 	 *            Current club name.

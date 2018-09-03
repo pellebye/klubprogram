@@ -1,4 +1,6 @@
 //********************************************************************************
+// Opdateret den 3.9.2018
+//********************************************************************************
 // Tomme linjer og linjer der begynder med "//" ignoreres af programmet. Linjer
 // der begynder med "*" angiver en ny informationsgruppe (en komando). Efter 
 // hver komando kommer de linjer der hører til denne komando.
@@ -10,6 +12,22 @@
 //
 //
 //********************************************************************************
+
+*randomliste
+//********************************************************************************
+// Denne funktion kan bruges uafh�ngigt af programmets �vrige funktioner ved at 
+// anbringe den forrest i konfigurationsfilen (config.txt).
+//
+// Her angives hvor mange csv-filer med tilfældige tal der skal genereres. 
+// Angives fx "8 - 32" vil der blive genereret 25 lister med tal i tilfældig 
+// rækkefølge, nemlig een fil med tallene 1-8 i tilfældig rækkefølge, een fil 
+// med tallene 1-9 i tilfældig rækkefølge osv. Indholdet i filerne kan direkte 
+// indgå som r�kker i et regneark.
+//
+// Bruges torsdag aften til at placere parrene i tilfældig rækkefølge ved 
+// sæsonenstart.
+//********************************************************************************
+8 - 30
 
 *Klub
 //********************************************************************************
@@ -127,7 +145,7 @@ kursus 3 - 5 = 650
 // eller med angivet tekst (et ord pr ugedag)  fx
 //    periode -uge 2018 7, * Ingen bridge i denne uge *
 //********************************************************************************
-periode 20180601-20190901
+periode 20180901-20190901
 periode -uge 2018 7, * Ingen bridge i denne uge *
 periode -uge 2018 42, * * Ingen bridge 
 
@@ -195,7 +213,7 @@ ManE 20180910-20181203, -20181015, kl 13, farve #C0EF98, :: gg1 gg2 gg3 ::
 TirE 20180911-20181204, -20181016, kl 12:30, farve #C0EF98 
 
 // ONSDAG
-OnsF 20180912-20181205, -20181017, kl 08:45, farve #F5F7CB
+OnsF 20180912-20181205, -20181017, kl 08:30, farve #F5F7CB
 OnsE 20180912-20181205, -20181017, kl 13, farve #C0EF98
 OnsE afsl +20181212, kl 12, farve #C0EF98
 OnsA 20180912-20181205, -20181017, -20180905, -20181003, -20181107, -20181205, kl 18:30, farve #F7CDCB, :: gg1 gg2 gg3 ::
@@ -265,7 +283,7 @@ ManE 20190107-20190401, kl 13, farve #C0EF98, :: gg1 gg2 gg3 ::
 TirE 20190108-20190402, kl 12:30, farve #C0EF98 
 
 // ONSDAG
-OnsF 20190102-20190327, kl 08:45, farve #F5F7CB
+OnsF 20190102-20190327, kl 08:30, farve #F5F7CB
 OnsE 20190102-20190327, kl 13, farve #C0EF98
 OnsA 20190102-20190327, -20190102, -20190206, -20190306, -20190403, kl 18:30, farve #F7CDCB, :: gg1 gg2 gg3 ::
 OnsA afsl +20190403, kl 18:30, farve #F7CDCB

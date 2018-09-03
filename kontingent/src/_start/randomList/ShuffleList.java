@@ -24,6 +24,8 @@ public class ShuffleList {
 			e.printStackTrace();
 		}
 		if (randomList.length() > 0) {
+			// remove possible spaces.
+			randomList = randomList.replaceAll(" ", "");
 			String[] splitString = randomList.split("-");
 			if (splitString.length == 2) {
 				CommonLog.logger.info("message//splitString[0] =" + splitString[0]);

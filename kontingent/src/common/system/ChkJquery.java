@@ -54,8 +54,13 @@ public class ChkJquery {
 			 */
 			if (fileNo == 1 && filetest.getStatus().compareTo(Status.FILEDOESNOTEXIST) == 0) {
 				// new InfoFirstTimeProgramStart();
-				new ShellAbout(false);
+				new ShellAbout(true);
 				Data.setFirstTimeStart(true);
+			} else {
+				if (fileNo == 1) {
+					new ShellAbout(false);
+					Data.setFirstTimeStart(false);
+				}
 			}
 
 			new MessagesAndChecks(null, ModeChecks.FILETEST_SYSTEMFILES, filetest);

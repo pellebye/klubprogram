@@ -31,6 +31,8 @@ public class ShellAbout {
 	private final String[] LABELTEXT_1 = new String[] { "Version", "År", "Af", "Mail", "Telefon" };
 	private String labelText = "";
 
+	private Button submit = null;
+
 	// ---------------------------------------------------------------------------------------------
 	// CONSTRUCTOR
 	// ---------------------------------------------------------------------------------------------
@@ -44,7 +46,7 @@ public class ShellAbout {
 		CommonLog.logger.info("class//");
 
 		// Text to about.
-		LABELTEXT_1[0] += ": " + "1.6";
+		LABELTEXT_1[0] += ": " + "1.7";
 		LABELTEXT_1[1] += ": " + "2017 - 2018";
 		LABELTEXT_1[2] += ": " + "Preben Ellebye";
 		LABELTEXT_1[3] += ": " + "preben@pellebye.dk";
@@ -65,10 +67,26 @@ public class ShellAbout {
 
 		createWidgets(childShell, firstTimeUse);
 
-		Display display = childShell.getDisplay();
-		while (!childShell.isDisposed()) {
-			if (!display.readAndDispatch()) {
-				display.sleep();
+		if (!firstTimeUse) {
+			for (int i = 10; i > 0; i--) {
+				try {
+					submit.setText("OK (" + i + ")");
+					Thread.sleep(1000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+					return;
+				}
+			}
+			childShell.dispose();
+			;
+		}
+
+		if (!childShell.isDisposed()) {
+			Display display = childShell.getDisplay();
+			while (!childShell.isDisposed()) {
+				if (!display.readAndDispatch()) {
+					display.sleep();
+				}
 			}
 		}
 	}
@@ -109,22 +127,10 @@ public class ShellAbout {
 		else
 			y = BASIC_Y + 160;
 
-		Button submit = new Button(childShell, SWT.PUSH);
+		submit = new Button(childShell, SWT.PUSH);
 		submit.setBounds(BASIC_X, y, BASIC_WIDTH, 65);
 		submit.setText("OK");
 		selectionForSubmit(submit, firstTimeUse);
-
-		if (!firstTimeUse) {
-			for (int i = 10; i > 0; i--) {
-				try {
-					submit.setText("OK (" + i + ")");
-					Thread.sleep(1000);
-				} catch (InterruptedException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-
 	}
 
 	/**
@@ -139,6 +145,7 @@ public class ShellAbout {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				CommonLog.logger.info("heading//");
+				Thread.currentThread().stop();
 				childShell.close();
 			}
 		});
@@ -195,7 +202,7 @@ public class ShellAbout {
 		// new MessagesAndChecks("0", ModeChecks.TEST_GENERAL, null);
 
 		LocalMethods.methodShowMessage("Local class run", "You are running in local class", SWT.ICON_INFORMATION);
-		new ShellAbout(false);
+		new ShellAbout(true);
 
 		shell.pack();
 		shell.open();

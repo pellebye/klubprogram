@@ -107,14 +107,7 @@ public class GmailImportContacts {
 			// Billing information
 			sb.append(",,,,,,,,,");
 			// Notes
-			sb.append(p.getMemberNo() + " spiller ");
-			ArrayList<String> days = p.getPlayClubs();
-			for (int j = 0; j < days.size(); j++) {
-				if (j > 0) {
-					sb.append("og ");
-				}
-				sb.append(days.get(j) + " ");
-			}
+			sb.append(addNotes(p));
 			sb.append(",,,,");
 			// Email
 			sb.append(p.getEmail() + ",,,,");
@@ -131,6 +124,31 @@ public class GmailImportContacts {
 
 			mergedPersons.set(i, p);
 		}
+	}
+
+	private String addNotes(Person p) {
+		ArrayList<String> days = p.getPlayClubs();
+		StringBuffer sb = new StringBuffer();
+		sb.append(" spiller ");
+
+		for (int j = 0; j < days.size(); j++) {
+			if (j == 0) {
+				if (days.size() > 1)
+					// First day of several.
+					sb.append(days.get(j) + " - ");
+				else
+					// First and only day.
+					sb.append(days.get(j));
+			} else if (j < days.size() - 1) {
+				// Another day, but more to come.
+				sb.append(days.get(j) + " - ");
+			} else {
+				// Last day.
+				sb.append(days.get(j));
+			}
+		}
+
+		return sb.toString();
 	}
 
 	/**

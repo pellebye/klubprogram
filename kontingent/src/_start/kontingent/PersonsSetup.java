@@ -90,8 +90,6 @@ public class PersonsSetup {
 		mergePersonsWithClubsPlayed();
 
 		new GmailImportContacts();
-
-		int k = 8;
 	}
 
 	/**
